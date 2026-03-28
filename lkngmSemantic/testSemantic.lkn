@@ -1,0 +1,376 @@
+line is a noun.
+line plural is lines.
+an anything is a noun.
+concept is a noun.
+concept plural is concepts.
+knowledge is a noun.
+knowledge plural is knowledges.
+domain is a noun.
+domain plural is domains.
+mechanics is a noun.
+force is a noun.
+force plural is forces.
+geometry is a noun.
+geometry plural is geometries.
+point is a noun.
+point plural is points.
+line is a noun.
+line plural is lines.
+plane is a noun.
+plane plural is planes.
+position is a noun.
+position plural is positions.
+dimension is a noun.
+dimension plural is dimensions.
+length is a noun.
+breadth is a noun.
+thickness is a noun.
+part is a noun.
+part plural is parts.
+straight is an adjective.
+finite is an adjective.
+boundary is a noun.
+boundary plural is boundaries.
+surface is a noun.
+surface plural is surfaces.
+angle is a noun.
+angle plural is angles.
+inclination is a noun.
+rectilinear is an adjective.
+obtuse is an adjective.
+acute is an adjective.
+right is an adjective.
+figure is a noun.
+circle is a noun.
+circle plural is circles.
+center is a noun.
+center plural is centers.
+a diameter is a noun.
+diameter plural is diameters.
+a triangle is a noun.
+triangle plural is triangles.
+isosceles is an adjective.
+scalene is an adjective.
+rightangled is an adjective.
+obtuseangled is an adjective.
+acuteangled is an adjective.
+equilateral is an adjective.
+a circumference is a noun.
+circumference plural is circumferences.
+a semicircle is a noun.
+figure is a noun.
+figure plural is figures.
+a square is a noun.
+square plural is squares.
+an oblong is a noun.
+adjacent is an adjective.
+opposite is an adjective.
+a rombus is a noun.
+a romboid is a noun.
+~-------------end of speech parts--------------------------~
+~------------ load some generic knowledge -----------------~
+mechanics is a domain of knowledge.
+force is a concept in mechanics.
+geometry is a domain of knowledge.
+point is a concept in geometry.
+line is a concept in geometry.
+plane is a concept in geometry.
+position is a concept in geometry.
+dimension is a concept in geometry.
+length is a dimension.
+breadth is a dimension.
+thickness is a dimension.
+what are domains of knowledge.
+what is a knowledge.
+what is a geometry.
+what are concepts in geometry.
+what domain of knowledge has a dimension.
+is dimension a concept of geometry.
+is dimension a concept in geometry.
+
+~===============Euclid Elements Editions====================================
+Two different translations are used
+	1.	THE FIRST SIX BOOKS OF THE ELEMENTS OF EUCLID.
+		BY JOHN CASEY.
+	2.  EUCLID'S ELEMETS (THE THIRDTEEN BOOKS).
+	    Translated BY THOMAS HEATH.
+~		
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+								The Point.
+JOHN CASEY:
+	I. A point is that which has position but not dimensions.
+THOMAS HEATH:
+	1. A point is that which has no part.
+----------------------------------------------------------------------------~ 
+point has a position.
+point has no dimensions.
+point has no parts.
+
+what is a point.
+does point have a position.
+what point has.
+what concept in geometry does not have a dimension.
+
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+								The Line
+JOHN CASEY: 
+	II. A line is length without breadth.
+	III. The intersections of lines and their extremities are points.
+	IV.  A line which lies evenly between its extreme points.
+THOMAS HEATH:
+	2. A line is breadthless legth.
+	3. The extremities of line are points.
+	4. A straight line is a line which lies evenly with the points on itself.
+
+----------------------------------------------------------------------------~
+line has length.
+line does not have breadth.
+line does not have thickness.
+a straight line is a line which lies evenly with the points on itself.
+a finite straight line is a straight line which is bounded by 2 points.
+
+~  Line Questions ~
+what is a line.
+what is a straight line.
+what is a finite straight line.
+
+how many boundaries does a finite straight line is bounded by.
+how many points does a finite straight line is bounded by.
+what concept in geometry does not have a breadth.
+~ End of Line Questions ~
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+								The Plane.
+edition1:					
+	V. A surface is that which has length and breadth.
+	VI. When a surface is such that the right line joining any two arbitrary
+		points in it lies wholly in the surface, it is called a plane.
+edition2:
+	5. A surface is that which has length and breadth only.
+	6. The extremities of a surface are lines.
+	7. A plane surface is a surface which lies evenly with the straight lines on itself
+----------------------------------------------------------------------------~
+
+surface is a concept in geometry.
+surface has length.
+surface has breadth.
+surface does not have thickness.
+a boundary of surface is a line.
+
+what is a surface.
+what is a boundary of surface.
+what concept in geometry does not have a thickness.
+what concept in geometry has dimension.
+
+plane is a surface for which the following holds
+if 
+	A be any point on the plane
+    and
+    B is any point on the plane
+    and
+	A is not equal to B
+	and
+    AB is right line between A and B
+	and 
+	P is any point on the AB
+then
+	P is on the plane.		
+
+what is a plane.
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+edition1:
+   ignoring
+edition2:
+	8. A plane angle is the inclination to one another of two lines in a plane
+       which meet one another and do not lie in a straight line.
+	9. And when the lines containing the angle are straight, the angle is called rectilinear.
+	10. When a straight line set up on a straight line makes the adjacent angles equal to one another,
+	each of the equal angles is right and the straight line standing on the other is calld perpendicular to that on which it is stands.
+
+----------------------------------------------------------------------------~
+
+angle is the inclination of 2 angle lines.
+rectilinear angle is the inclination of 2 finite straight lines.
+what is an angle.
+what is rectilinear angle.
+
+right angle is an angle.
+
+Given the following premises
+	let AB be the straight line between point A and point B;
+	let point C be on AB;
+	let DC be the straight line between point D and point C;
+	D is not on AB;
+	let angle ACD be the angle between AC and CD;
+	let angle DCB be the angle between DC and CB.
+It follows that
+	angle ACD is a right angle;
+	line DC is perpendicular to line AB.
+If and only if angle ACD is equal to angle DCB.
+
+what is a right angle.
+
+
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+edition1:
+   not now
+edition2:
+	11. An obtuse angle is an angle greater than a right angle.
+	12. An acute angle is an angle less than a right angle.
+
+----------------------------------------------------------------------------~
+an obtuse angle is an angle which is greater than a right angle.
+an acute angle is an angle which is less than a right angle.
+what is an obtuse angle.
+what is an acute angle.
+
+what right angle is less than an obtuse angle.
+what acute angle is less than an right angle.
+what angle is greater than an right angle.
+what angle is less than an right angle.
+what angle is greater than an acute angle.
+what angle is greater than a right angle.
+what angle is less than an obtuse angle.
+
+~ Additional Logic & Transitivity Tests ~
+what acute angle is less than an obtuse angle.
+is a right angle greater than an acute angle.
+is an obtuse angle less than a right angle.
+what angle is less than a right angle.
+what angles are greater than a right angle.
+
+~++++++++++++++++++++++++++++++Euclide: BOOK 1 +++++++++++++++++++++++++++++
+edition1:
+   not now
+edition2:
+	13. A boundary is that which is an extremity of anything.
+	14. A figure is that which is contained by any boundary or boundaries.
+----------------------------------------------------------------------------~
+a figure has breadth.
+a figure is bounded by boundaries.
+
+a circle is a figure.
+a circle is bounded by circumference.
+circumference is a line.
+what is a boundary of a circle.
+what is a circumference.
+what is circle.
+a circle has a center.
+
+the center of a circle is a point for which the following holds:
+if
+	A is any point on circle circumference
+and
+	B is any point on circle circumference
+and
+	C is a circle center
+and
+	B is not equal A
+then the distance between A and C is equal to the distance between B and C.
+
+what is a circle.
+what is a center of a circle.
+
+a circle has a diameter.
+a diameter is a finite straight line.
+a diameter contains the center of a circle.
+~the diameter has 2 boundaries.~
+the boundaries of a diameter lie on the circumference.
+how many boundaries does a diameter has.
+is diameter a finite straight line.
+a semicircle lies on a circle.
+a semicircle is bounded by the diameter of a circle and half of the circumference.
+what is semicircle.
+what are boundaries of semicircle.
+
+figure has breath.
+figure is bounded by boundaries.
+rectilinear figure is a figure which is bounded by finite straight lines.
+
+what is a boundary of rectilinear figure.
+what is a rectilinear figure.
+
+a side is a noun.
+side plural is sides.
+a boundary of a rectilinear figure is called a side of a rectilinear figure.
+what is a rectilinear figure.
+what is a boundary of rectilinear figure.
+what is a side of rectilinear figure.
+trilateral is an adjective.
+a trilateral figure is a rectilinear figure which is bounded by 3 finite straight lines.
+what is a boundary of trilateral figure.
+how many boundaries does a trilateral figure have.
+how many sides does a trilateral figure is bounded by.
+
+quadrilateral is an adjective.
+
+a quadrilateral figure is a rectilinear figure which is bounded by 4 finite straight lines.
+how many boundaries does a quadrilateral figure is bounded by.
+multilateral is an adjective.
+a multilateral figure is a figure which is bounded by more than 4 finite straight lines.
+how many finite straight lines does a multilateral figure is bounded by.
+what is a quadrilateral figure.
+
+~TRIANGLE~
+
+a triangle is a trilateral figure.
+a triangle has 3 angles.
+how many angles does a triangle have.
+how many boundaries does a triangle have.
+what is a triangle.
+
+an equilateral triangle is a triangle which has all sides equal.
+what is a equilateral triangle.
+
+
+an isosceles triangle is a triangle which has 2 boundaries equal.
+what is a isosceles triangle.
+how many angles does a isosceles triangle have.
+how many boundaries does a isosceles triangle have.
+
+how many sides does a isosceles triangle have.
+how many equal sides does a isosceles triangle have.
+how many unequal sides does a isosceles triangle have.
+
+a scalene triangle is a triangle which has all sides unequal.
+
+what is a scalene triangle.
+how many equal sides does a scalene triangle have.
+how many unequal sides does a scalene triangle have.
+a rightangled triangle is a triangle which has a right angle.
+what is a rightangled triangle.
+an obtuseangled triangle is a triangle which has a obtuse angle.
+what is an obtuseangled triangle.
+an acuteangled triangle is a triangle which has all angles acute.
+what is a acuteangled triangle.
+how many angles does a triangle have.
+how many sides does a triangle have.
+
+~SQUARE~
+a square is a quadrilateral figure.
+a square has 4 right angles.
+a square has all sides equal.
+how many right angles does a square have.
+how many angles does square has.
+how many equal sides does a square have.
+
+~OBLONG~
+an oblong is a quadrilateral figure.
+an oblong has 4 right angles.
+an oblong has unequal adjacent sides.
+an oblong has equal opposite sides.
+
+~ROMBUS~
+a rombus is a quadrilateral figure.
+a rombus has 4 angles.
+a rombus has all sides equal.
+a rombus has no right angles.
+how many right angles rombus has.
+how many angles rombus has.
+
+
+
+~ROMBOID~
+a romboid is a quadrilateral figure.
+a romboid has equal opposite sides.
+a romboid has unequal  adjacent sides.
+a romboid has no right angles.

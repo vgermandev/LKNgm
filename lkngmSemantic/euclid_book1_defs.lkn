@@ -1,0 +1,36 @@
+geometry is a domain of knowledge.
+dimension is a concept in geometry.
+
+point is a concept in geometry. point has a position. point has no dimensions. point has no parts.
+line is a concept in geometry. line has a length.
+straight line is that which lies evenly with the points on itself.
+finite straight line is that which is bounded by 2 points.
+
+surface is a concept in geometry. surface has a length. surface has a breadth.
+boundary of surface is a line.
+
+plane is a concept in geometry and a surface for, which the following holds: if A be any point on the plane and B is any point on the plane and A is not equal to B and AB is right line between A and B and P is any point on the AB then P is on the plane.
+
+angle is an inclination of 2 angle lines.
+rectilinear angle is an inclination of 2 finite straight lines.
+obtuse angle is that which is greater than a right angle.
+acute angle is that which is less than a right angle.
+
+boundary of circle is a circumference.
+circumference is a line and the boundary of a circle.
+circle is a figure, which is bounded by a circumference. circle has a center.
+center of circle is a point for, which the following holds: if A is any point on circle circumference and B is any point on circle circumference and C is a circle center and B is not equal A then the distance between A and C is equal to the distance between B and C.
+
+diameter is a finite straight line. diameter has 2 boundaries.
+semicircle is that which is lie on a circle, which is bounded by a diameter of a circle and half of the circumference.
+
+rectilinear figure is that which is bounded by finite straight lines.
+boundary of rectilinear figure is finite straight lines and called side of rectilinear figure.
+trilateral figure is a rectilinear figure. trilateral figure has 3 finite straight lines.
+quadrilateral figure is a rectilinear figure. quadrilateral figure has 4 finite straight lines.
+triangle is a trilateral figure. triangle has 3 angles.
+
+equilateral triangle is that which has all sides equal.
+isosceles triangle is that which has 2 boundaries equal.
+scalene triangle is that which has all sides unequal.
+square has 4 right angles. square has 4 equal sides.
