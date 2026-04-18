@@ -1,206 +1,223 @@
-File read into string. Size: 11857 characters.
+File read into string. Size: 12154 characters.
   [Question]: what are domains of knowledge?
+  [Answer]: Domains of knowledge are art, mechanics and geometry.
   [Question]: what is a knowledge?
-  [Answer]: A knowledge is something I don't have a full definition for yet.
+  [Answer]: A knowledge is something which  has domain.
   [Question]: what is a geometry?
   [Answer]: A geometry is a domain of knowledge.
-  [Question]: what are concepts in geometry?
-  [Question]: what domain of knowledge has a dimension?
-  [Answer]: domain of knowledge that has dimension is geometry.
-  [Question]: is dimension a concept of geometry?
-  [Answer]: No.
   [Question]: is dimension a concept in geometry?
   [Answer]: Yes.
-  [Question]: what is a point?
-  [Answer]: A point is a concept in geometry. It has a position, no dimensions, no parts.
+  [Question]: is dimension a concept of geometry?
+  [Answer]: No.
+  [Question]: does geometry has dimension?
+  [Answer]: No.
+  [Question]: what are concepts in geometry?
+  [Answer]: Concepts in geometry are dimension, point, line, plane and position.
   [Question]: does point have a position?
   [Answer]: Yes.
+  [Question]: does point have a dimension?
+  [Answer]: No.
+  [Question]: does point have a part?
+  [Answer]: No.
   [Question]: what point has?
-  [Answer]: point has position, no dimensions, no parts.
-  [Question]: what concept in geometry does not have a dimension?
-  [Answer]: concept in geometry that does not have dimension is point, line, plane, position, dimension.
+  [Answer]: A point has a position.
+  [Question]: what point does not have?
+  [Answer]: A point does not have a dimension or a part.
+  [Question]: what concept in geometry has a position?
+  [Answer]: The concept in geometry that has position is: point.
+  [Question]: what concept in geometry has no dimension?
+  [Answer]: The concept in geometry that has no dimension is: point.
+  [Question]: what domain of knowledge has a concept position?
+  [Answer]: Geometry.
+  [Question]: what domain of knowledge has a dimension?
+  [Answer]: Geometry.
+  [Question]: what concept in geometry does not have length?
+  [Answer]: The concept in geometry that has no length is: point.
   [Question]: what is a line?
-  [Answer]: A line is a concept in geometry. It has a length.
+  [Answer]: A line is a concept in geometry which has a length. It does not have a breadth or a thickness. A straight line is a type of line.
   [Question]: what is a straight line?
-  [Answer]: A straight line is that which lies evenly with the points on itselfthat which lies evenly with the points on itself.
+  [Answer]: A straight line is a line which lies evenly with the points on itself. A finite straight line is a type of straight line.
   [Question]: what is a finite straight line?
-  [Answer]: A finite straight line is that which is bounded by 2 points.
-  [Question]: how many boundaries does a finite straight line is bounded by?
-  [Answer]: 2.
-  [Question]: how many points does a finite straight line is bounded by?
-  [Answer]: 2.
+  [Answer]: A finite straight line is a straight line which is bounded by 2 points.
+  [Question]: how many boundaries is a finite straight line bounded by?
+  [Answer]: A finite straight line is bounded by 2 points.
+  [Question]: how many points is a finite straight line bounded by?
+  [Answer]: A finite straight line is bounded by 2 points.
   [Question]: what concept in geometry does not have a breadth?
-  [Answer]: concept in geometry that does not have breadth is point, line, plane, position, dimension.
+  [Answer]: Concepts in geometry that have no breadth are: line and point.
   [Question]: what is a surface?
-  [Answer]: A surface is a concept in geometry. It has a length, a breadth.
+  [Answer]: A surface is a concept in geometry which has a length and a breadth. It does not have a thickness. It is bounded by a line.
   [Question]: what is a boundary of surface?
-  [Answer]: A boundary of surface is a line.
+  [Answer]: a surface is bounded by line.
+.
   [Question]: what concept in geometry does not have a thickness?
-  [Answer]: concept in geometry that does not have thickness is point, line, plane, position, dimension, surface.
+  [Answer]: Concepts in geometry that have no thickness are: line, point and surface.
   [Question]: what concept in geometry has dimension?
-  [Answer]: concept in geometry that has dimension is line, surface.
+  [Answer]: Concepts in geometry which have dimension are: line and surface.
   [Question]: what is a plane?
-  [Answer]: A plane is a concept in geometry and a surface for, which the following holds
-if
-        A be any point on the plane
+  [Answer]: A plane is a concept in geometry which is also a surface.
+  [Rule]: IF A be any point on the plane
     and
     B is any point on the plane
     and
         A is not equal to B
         and
-    AB is right line between A and B
+    AB is right line between A
+          AND B
         and
         P is any point on the AB
-then
-        P is on the plane, which the following holds
-if
-        A be any point on the plane
-    and
-    B is any point on the plane
-    and
-        A is not equal to B
-        and
-    AB is right line between A and B
-        and
-        P is any point on the AB
-then
-        P is on the plane.
+
+          THEN P is on the plane.
   [Question]: what is an angle?
   [Answer]: An angle is an inclination of 2 angle lines.
   [Question]: what is rectilinear angle?
   [Answer]: A rectilinear angle is an inclination of 2 finite straight lines.
   [Question]: what is a right angle?
-  [Answer]: A right angle is something I don't have a full definition for yet.
+  [Answer]: A right angle is an angle.
+It is defined by:
+Given the following premises
+        let AB be the straight line between point A and point B;
+        let point C be on AB;
+        let DC be the straight line between point D and point C;
+        D is not on AB;
+        let angle ACD be the angle between AC and CD;
+        let angle DCB be the angle between DC and CB.
+It follows that
+        angle ACD is a right angle;
+        line DC is perpendicular to line AB.
+If and only if angle ACD is equal to angle DCB.
   [Question]: what is an obtuse angle?
-  [Answer]: An obtuse angle is that which is greater than a right angle.
+  [Answer]: An obtuse angle is an angle which is greater than a right angle.
   [Question]: what is an acute angle?
-  [Answer]: An acute angle is that which is less than a right angle.
-  [Question]: what right angle is less than an obtuse angle?
-  [Answer]: All, because an obtuse angle is greater than a right angle
-  [Question]: what acute angle is less than an right angle?
-  [Answer]: All of them are
-  [Question]: what angle is greater than an right angle?
-  [Answer]: All obtuse angles are greater than a right angle because they are greater than a right angle, and a right angle is equal to a right angle.
+  [Answer]: An acute angle is an angle which is less than a right angle.
+  [Question]: is right angle less than an obtuse angle?
+  [Answer]: Yes.
   [Question]: what angle is less than an right angle?
-  [Answer]: All acute angles are less than a right angle because they are less than a right angle, and a right angle is equal to a right angle.
+  [Answer]: All acute angles are less than a right angle.
+  [Question]: what angle is greater than an right angle?
+  [Answer]: All obtuse angles are greater than a right angle.
+  [Question]: what angle is less than an right angle?
+  [Answer]: All acute angles are less than a right angle.
   [Question]: what angle is greater than an acute angle?
-  [Answer]: All, because an acute angle is less than an angle
+  [Answer]: All obtuse angles are greater than an acute angle because they are greater than a right angle, and an acute angle is less than a right angle.
   [Question]: what angle is greater than a right angle?
-  [Answer]: All obtuse angles are greater than a right angle because they are greater than a right angle, and a right angle is equal to a right angle.
+  [Answer]: All obtuse angles are greater than a right angle.
   [Question]: what angle is less than an obtuse angle?
-  [Answer]: All, because an obtuse angle is greater than an angle
-  [Question]: what acute angle is less than an obtuse angle?
   [Answer]: All acute angles are less than an obtuse angle because they are less than a right angle, and an obtuse angle is greater than a right angle.
   [Question]: is a right angle greater than an acute angle?
-  [Answer]: No.
+  [Answer]: Yes.
   [Question]: is an obtuse angle less than a right angle?
   [Answer]: No.
   [Question]: what angle is less than a right angle?
-  [Answer]: All acute angles are less than a right angle because they are less than a right angle, and a right angle is equal to a right angle.
+  [Answer]: All acute angles are less than a right angle.
   [Question]: what angles are greater than a right angle?
-  [Answer]: All obtuse angles are greater than a right angle because they are greater than a right angle, and a right angle is equal to a right angle.
+  [Answer]: All obtuse angles are greater than a right angle.
   [Question]: what is a boundary of a circle?
-  [Answer]: A boundary of circle is a circumference.
+  [Answer]: a circle is bounded by circumference.
+.
   [Question]: what is a circumference?
-  [Answer]: A circumference is a line and the boundary of a circle.
+  [Answer]: A circumference is a line.
   [Question]: what is circle?
-  [Answer]: A circle is a figure, which is bounded by a circumference.
+  [Answer]: A circle is a figure which is bounded by a circumference.
   [Question]: what is a circle?
-  [Answer]: A circle is a figure, which is bounded by a circumference. It has a center.
+  [Answer]: A circle is a figure which has a center. It is bounded by a circumference.
   [Question]: what is a center of a circle?
-  [Answer]: A center of circle is a point for, which the following holds:
-if
-        A is any point on circle circumference
+  [Answer]: A center of circle is a point.
+  [Rule]: IF A is any point on circle circumference
 and
         B is any point on circle circumference
 and
         C is a circle center
 and
         B is not equal A
-then the distance between A and C is equal to the distance between B and C, which the following holds:
-if
-        A is any point on circle circumference
-and
-        B is any point on circle circumference
-and
-        C is a circle center
-and
-        B is not equal A
-then the distance between A and C is equal to the distance between B and C.
-  [Question]: how many boundaries does a diameter has?
-  [Answer]: 2.
+
+          THEN the distance between A and C is equal to the distance between B and C.
+  [Question]: how many boundaries is  a diameter bounded by?
+  [Answer]: A diameter is bounded by 2 points. Given that a diameter is a finite straight line.
   [Question]: is diameter a finite straight line?
   [Answer]: Yes.
   [Question]: what is semicircle?
-  [Answer]: A semicircle is that which is lie on a circle, which is bounded by a diameter of a circle and half of the circumference.
+  [Answer]: A semicircle is something which lies on a circle. It is bounded by a diameter of circle and half ofcircumference.
+
+>>> Entered DEBUG REPL <<<
+Type a concept name to inspect it, or 'cont' to continue parsing.
+debug> cont
+>>> Exiting DEBUG REPL <<<
   [Question]: what are boundaries of semicircle?
-  [Answer]: The boundaries of semicircle are a diameter of a circle and half of the circumference.
-  (I already knew that.)
+  [Answer]: The boundaries of semicircle are a diameter of circle and half ofcircumference.
   [Question]: what is a boundary of rectilinear figure?
-  [Answer]: A boundary of rectilinear figure is finite straight lines.
+  [Answer]: a rectilinear figure is bounded by finite straight lines.
+.
   [Question]: what is a rectilinear figure?
-  [Answer]: A rectilinear figure is that which is bounded by finite straight lines.
-  [Question]: what is a rectilinear figure?
-  [Answer]: A rectilinear figure is that which is bounded by finite straight lines.
-  [Question]: what is a boundary of rectilinear figure?
-  [Answer]: A boundary of rectilinear figure is finite straight lines and called side of rectilinear figure.
+  [Answer]: A rectilinear figure is a figure which is bounded by finite straight lines.
   [Question]: what is a side of rectilinear figure?
-  [Answer]: A side of rectilinear figure is finite straight lines and the boundary of a rectilinear figure.
+  [Answer]: a rectilinear figure is bounded by finite straight lines.
+.
   [Question]: what is a boundary of trilateral figure?
-  [Answer]: A boundary of trilateral figure is 3 finite straight lines.
-  [Question]: how many boundaries does a trilateral figure have?
-  [Answer]: 7.
-  [Question]: how many sides does a trilateral figure is bounded by?
-  [Answer]: 7.
-  [Question]: how many boundaries does a quadrilateral figure is bounded by?
-  [Answer]: 9.
-  [Question]: how many finite straight lines does a multilateral figure is bounded by?
-  [Answer]: 4.
+  [Answer]: a trilateral figure is bounded by 3 finite straight lines.
+  [Question]: how many boundaries is a trilateral figure bounded by?
+  [Answer]: A trilateral figure is bounded by 3 finite straight lines.
+  [Question]: how many sides is a trilateral figure bounded by?
+  [Answer]: A trilateral figure is bounded by 3 finite straight lines.
+  [Question]: how many boundaries is a quadrilateral figure  bounded by?
+  [Answer]: A quadrilateral figure is bounded by 4 finite straight lines.
+  [Question]: how many finite straight lines is a multilateral figure  bounded by?
+  [Answer]: A multilateral figure is bounded by greater than 4 finite straight lines.
   [Question]: what is a quadrilateral figure?
-  [Answer]: A quadrilateral figure is a rectilinear figure, which is bounded by 4 finite straight lines.
-  [Question]: how many angles does a triangle have?
-  [Answer]: 3.
-  [Question]: how many boundaries does a triangle have?
-  [Answer]: 7.
+  [Answer]: A quadrilateral figure is a rectilinear figure which is bounded by 4 finite straight lines.
+  [Question]: how many angles does a triangle has?
+  [Answer]: A triangle has 3 angles.
+  [Question]: how many boundaries is a triangle bounded by?
+  [Answer]: A triangle is bounded by 3 finite straight lines. Given that a triangle is a trilateral figure.
   [Question]: what is a triangle?
-  [Answer]: A triangle is a trilateral figure. It has 3 angles.
+  [Answer]: A triangle is a trilateral figure which has 3 angles.
   [Question]: what is a equilateral triangle?
-  [Answer]: An equilateral triangle is that which has all sides equal.
+  [Answer]: An equilateral triangle is a triangle which has all sides equal.
   [Question]: what is a isosceles triangle?
-  [Answer]: An isosceles triangle is that which has 2 boundaries equal.
-  [Question]: how many angles does a isosceles triangle have?
-  [Answer]: 3.
-  [Question]: how many boundaries does a isosceles triangle have?
-  [Answer]: 9.
-  [Question]: how many sides does a isosceles triangle have?
-  [Answer]: 9.
-  [Question]: how many equal sides does a isosceles triangle have?
-  [Answer]: 9.
-  [Question]: how many unequal sides does a isosceles triangle have?
-  [Answer]: 1.
+  [Answer]: An isosceles triangle is a triangle which has 2 boundaries equal.
+  [Question]: how many angles does an isosceles triangle has?
+  [Answer]: An isosceles triangle has 3 angles.
+  [Question]: how many boundaries is an isosceles triangle bounded by?
+  [Answer]: An isosceles triangle is bounded by 3 finite straight lines. Given that an isosceles triangle is a trilateral figure.
+  [Question]: how many sides is isosceles triangle bounded by?
+  [Answer]: An isosceles triangle is bounded by 3 finite straight lines. Given that an isosceles triangle is a trilateral figure.
+  [Question]: how many equal boundaries does an isosceles triangle have?
+  [Answer]: An isosceles triangle has 2 equal boundaries.
+  [Question]: how many unequal boundaries does an isosceles triangle have?
+  [Answer]: An isosceles triangle has one unequal boundary.
+  [Question]: how many equal sides does an isosceles triangle have?
+  [Answer]: An isosceles triangle has 2 equal boundaries.
+  [Question]: how many unequal sides does an isosceles triangle have?
+  [Answer]: An isosceles triangle has one unequal boundary.
   [Question]: what is a scalene triangle?
-  [Answer]: A scalene triangle is That which has an all sides unequal.
+  [Answer]: A scalene triangle is a triangle which has all sides unequal.
   [Question]: how many equal sides does a scalene triangle have?
-  [Answer]: 7.
+  [Answer]: none found.
   [Question]: how many unequal sides does a scalene triangle have?
-  [Answer]: 3.
+  [Answer]: A scalene triangle has 3 unequal boundaries.
   [Question]: what is a rightangled triangle?
-  [Answer]: A rightangled triangle is That which has a right angle.
+  [Answer]: A rightangled triangle is a triangle which has a right angle.
   [Question]: what is an obtuseangled triangle?
-  [Answer]: An obtuseangled triangle is That which has an obtuse angle.
-  [Question]: what is a acuteangled triangle?
-  [Answer]: An acuteangled triangle is That which has an all angles acute.
+  [Answer]: An obtuseangled triangle is a triangle which has an obtuse angle.
+  [Question]: what is an acuteangled triangle?
+  [Answer]: An acuteangled triangle is a triangle which has all angles acute.
   [Question]: how many angles does a triangle have?
-  [Answer]: 3.
+  [Answer]: A triangle has 3 angles.
   [Question]: how many sides does a triangle have?
-  [Answer]: 7.
+  [Answer]: A triangle is bounded by 3 finite straight lines. Given that a triangle is a trilateral figure.
   [Question]: how many right angles does a square have?
-  [Answer]: 4.
-  [Question]: how many angles does square has?
-  [Answer]: 4.
+  [Answer]: A square has 4 right angles.
+  [Question]: how many angles does square have?
+  [Answer]: A square has 4 right angles.
   [Question]: how many equal sides does a square have?
-  [Answer]: 9.
-  [Question]: how many right angles rombus has?
-  [Answer]: 0.
-  [Question]: how many angles rombus has?
-  [Answer]: 4.
+  [Answer]: A square has 4 equal boundaries.
+  [Question]: what is an oblong?
+  [Answer]: An oblong is a quadrilateral figure which has 4 right angles, unequal adjacent side and equal opposite side.
+  [Question]: how many right angles does rombus have?
+  [Answer]: none found.
+  [Question]: how many angles does rombus have?
+  [Answer]: A rombus has 4 angles.
+  [Question]: what is a rombus?
+  [Answer]: A rombus is a quadrilateral figure which has 4 angles. It does not have a right angle. It has all sides equal.
+  [Question]: what is a romboid?
+  [Answer]: A romboid is a quadrilateral figure which has equal opposite side and unequal adjacent side. It does not have a right angle.

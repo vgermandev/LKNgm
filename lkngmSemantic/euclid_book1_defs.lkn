@@ -1,36 +1,146 @@
-geometry is a domain of knowledge.
-dimension is a concept in geometry.
+~Euclid Book 1 Definition 1~
+point has a position.
+point has no dimensions.
+point has no parts.
 
-point is a concept in geometry. point has a position. point has no dimensions. point has no parts.
-line is a concept in geometry. line has a length.
-straight line is that which lies evenly with the points on itself.
-finite straight line is that which is bounded by 2 points.
+~Euclid Book 1 Definition 2~
+line has length.
+line does not have breadth.
+line does not have thickness.
 
-surface is a concept in geometry. surface has a length. surface has a breadth.
-boundary of surface is a line.
+~Euclid Book 1 Definition 3~
+extremities of line are points.
 
-plane is a concept in geometry and a surface for, which the following holds: if A be any point on the plane and B is any point on the plane and A is not equal to B and AB is right line between A and B and P is any point on the AB then P is on the plane.
+~Euclid Book 1 Definition 4~
+a straight line is a line which lies evenly with the points on itself.
+a finite straight line is a straight line which is bounded by 2 points.
 
-angle is an inclination of 2 angle lines.
-rectilinear angle is an inclination of 2 finite straight lines.
-obtuse angle is that which is greater than a right angle.
-acute angle is that which is less than a right angle.
+~Euclid Book 1 Definition 5~
+surface is a concept in geometry.
+surface has length.
+surface has breadth.
+surface does not have thickness.
 
-boundary of circle is a circumference.
-circumference is a line and the boundary of a circle.
-circle is a figure, which is bounded by a circumference. circle has a center.
-center of circle is a point for, which the following holds: if A is any point on circle circumference and B is any point on circle circumference and C is a circle center and B is not equal A then the distance between A and C is equal to the distance between B and C.
+~Euclid Book 1 Definition 6~
+a boundary of surface is a line.
 
-diameter is a finite straight line. diameter has 2 boundaries.
-semicircle is that which is lie on a circle, which is bounded by a diameter of a circle and half of the circumference.
+~Euclid Book 1 Definition 7~
+plane is a surface for which the following holds
+if 
+	A be any point on the plane
+    and
+    B is any point on the plane
+    and
+	A is not equal to B
+	and
+    AB is right line between A and B
+	and 
+	P is any point on the AB
+then
+	P is on the plane.
 
-rectilinear figure is that which is bounded by finite straight lines.
-boundary of rectilinear figure is finite straight lines and called side of rectilinear figure.
-trilateral figure is a rectilinear figure. trilateral figure has 3 finite straight lines.
-quadrilateral figure is a rectilinear figure. quadrilateral figure has 4 finite straight lines.
-triangle is a trilateral figure. triangle has 3 angles.
+~Euclid Book 1 Definition 8~
+angle is the inclination of 2 angle lines.
 
-equilateral triangle is that which has all sides equal.
-isosceles triangle is that which has 2 boundaries equal.
-scalene triangle is that which has all sides unequal.
-square has 4 right angles. square has 4 equal sides.
+~Euclid Book 1 Definition 9~
+rectilinear angle is the inclination of 2 finite straight lines.
+
+~Euclid Book 1 Definition 10~
+right angle is an angle.
+Given the following premises
+	let AB be the straight line between point A and point B;
+	let point C be on AB;
+	let DC be the straight line between point D and point C;
+	D is not on AB;
+	let angle ACD be the angle between AC and CD;
+	let angle DCB be the angle between DC and CB.
+It follows that
+	angle ACD is a right angle;
+	line DC is perpendicular to line AB.
+If and only if angle ACD is equal to angle DCB.
+
+~Euclid Book 1 Definition 11~
+an obtuse angle is an angle which is greater than a right angle.
+
+~Euclid Book 1 Definition 12~
+an acute angle is an angle which is less than a right angle.
+
+~Euclid Book 1 Definition 13~
+a boundary is that which is an extremity of anything.
+
+~Euclid Book 1 Definition 14~
+figure has breath.
+figure is bounded by boundaries.
+a figure is that which is contained by any boundary or boundaries.
+
+~Euclid Book 1 Definition 15~
+a circle is a figure.
+a circle is bounded by circumference.
+circumference is a line.
+
+~Euclid Book 1 Definition 16~
+a circle has a center.
+the center of a circle is a point for which the following holds:
+if
+	A is any point on circle circumference
+and
+	B is any point on circle circumference
+and
+	C is a circle center
+and
+	B is not equal A
+then the distance between A and C is equal to the distance between B and C.
+
+~Euclid Book 1 Definition 17~
+a circle has a diameter.
+a diameter is a finite straight line.
+a diameter contains the center of a circle.
+the boundaries of a diameter lie on the circumference.
+
+~Euclid Book 1 Definition 18~
+a semicircle lies on a circle.
+a semicircle is bounded by the diameter of a circle and half of the circumference.
+
+~Euclid Book 1 Definition 19~
+rectilinear figure is a figure which is bounded by finite straight lines.
+a side is a noun.
+side plural is sides.
+a boundary of a rectilinear figure is called a side of a rectilinear figure.
+trilateral is an adjective.
+a trilateral figure is a rectilinear figure which is bounded by 3 finite straight lines.
+quadrilateral is an adjective.
+a quadrilateral figure is a rectilinear figure which is bounded by 4 finite straight lines.
+multilateral is an adjective.
+a multilateral figure is a figure which is bounded by more than 4 finite straight lines.
+
+~Euclid Book 1 Definition 20~
+a triangle is a trilateral figure.
+an equilateral triangle is a triangle which has all sides equal.
+an isosceles triangle is a triangle which has 2 boundaries equal.
+a scalene triangle is a triangle which has all sides unequal.
+
+~Euclid Book 1 Definition 21~
+a triangle has 3 angles.
+a rightangled triangle is a triangle which has a right angle.
+an obtuseangled triangle is a triangle which has a obtuse angle.
+an acuteangled triangle is a triangle which has all angles acute.
+
+~Euclid Book 1 Definition 22~
+a square is a quadrilateral figure.
+a square has 4 right angles.
+a square has all boundaries equal.
+
+an oblong is a quadrilateral figure.
+an oblong has 4 right angles.
+an oblong has unequal adjacent sides.
+an oblong has equal opposite sides.
+
+a rombus is a quadrilateral figure.
+a rombus has 4 angles.
+a rombus has all sides equal.
+a rombus has no right angles.
+
+a romboid is a quadrilateral figure.
+a romboid has equal opposite sides.
+a romboid has unequal adjacent sides.
+a romboid has no right angles.
