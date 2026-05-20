@@ -13,6 +13,9 @@ The primary test script used to verify the engine. It includes part-of-speech de
 ### 3. [actual_output_trace.txt](actual_output_trace.txt)
 A complete execution trace showing the engine's responses to the `testSemantic.lkn` script. This file demonstrates real-world examples of **Deductive Subtyping** and **Complementary Inference** (e.g., calculating the number of unequal sides in an isosceles triangle).
 
+### 4. LKN_Historical_Foundation_Rod_and_the_Ring.md
+The foundational document outlining the philosophical and historical underpinnings of the LKN Semantic project, tracing the "Rod and the Ring" duality from ancient Sumer to modern computational geometry.
+
 ### 4. linkedin_announcement.md
 The official milestone announcement. It provides a human-readable overview of the two-phase development process:
 * **Phase One**: Solo development of core semantic logic.

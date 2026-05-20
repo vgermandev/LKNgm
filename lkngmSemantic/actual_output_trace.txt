@@ -1,223 +1,471 @@
-File read into string. Size: 12154 characters.
+File read into string. Size: 50157 characters.
   [Question]: what are domains of knowledge?
   [Answer]: Domains of knowledge are art, mechanics and geometry.
+
   [Question]: what is a knowledge?
-  [Answer]: A knowledge is something which  has domain.
+  [Answer]: A knowledge is something which has domain.
+
   [Question]: what is a geometry?
   [Answer]: A geometry is a domain of knowledge.
+
   [Question]: is dimension a concept in geometry?
   [Answer]: Yes.
+
   [Question]: is dimension a concept of geometry?
   [Answer]: No.
+
   [Question]: does geometry has dimension?
   [Answer]: No.
+
   [Question]: what are concepts in geometry?
   [Answer]: Concepts in geometry are dimension, point, line, plane and position.
+
   [Question]: does point have a position?
   [Answer]: Yes.
+
   [Question]: does point have a dimension?
   [Answer]: No.
+
   [Question]: does point have a part?
   [Answer]: No.
+
   [Question]: what point has?
   [Answer]: A point has a position.
+
   [Question]: what point does not have?
   [Answer]: A point does not have a dimension or a part.
+
   [Question]: what concept in geometry has a position?
   [Answer]: The concept in geometry that has position is: point.
+
   [Question]: what concept in geometry has no dimension?
   [Answer]: The concept in geometry that has no dimension is: point.
+
   [Question]: what domain of knowledge has a concept position?
   [Answer]: Geometry.
+
   [Question]: what domain of knowledge has a dimension?
   [Answer]: Geometry.
+
   [Question]: what concept in geometry does not have length?
   [Answer]: The concept in geometry that has no length is: point.
+
   [Question]: what is a line?
-  [Answer]: A line is a concept in geometry which has a length. It does not have a breadth or a thickness. A straight line is a type of line.
+  [Answer]: A line is a concept in geometry which has a length. It does not have a breadth or a thickness A straight line is a type of line..
+
   [Question]: what is a straight line?
-  [Answer]: A straight line is a line which lies evenly with the points on itself. A finite straight line is a type of straight line.
+  [Answer]: A straight line is a line which lies evenly with the points on itself A finite straight line is a type of straight line..
+
   [Question]: what is a finite straight line?
   [Answer]: A finite straight line is a straight line which is bounded by 2 points.
+
   [Question]: how many boundaries is a finite straight line bounded by?
   [Answer]: A finite straight line is bounded by 2 points.
+
   [Question]: how many points is a finite straight line bounded by?
   [Answer]: A finite straight line is bounded by 2 points.
+
   [Question]: what concept in geometry does not have a breadth?
   [Answer]: Concepts in geometry that have no breadth are: line and point.
+
   [Question]: what is a surface?
   [Answer]: A surface is a concept in geometry which has a length and a breadth. It does not have a thickness. It is bounded by a line.
+
   [Question]: what is a boundary of surface?
-  [Answer]: a surface is bounded by line.
-.
+  [Answer]: A surface is bounded by line.
+
   [Question]: what concept in geometry does not have a thickness?
   [Answer]: Concepts in geometry that have no thickness are: line, point and surface.
+
   [Question]: what concept in geometry has dimension?
   [Answer]: Concepts in geometry which have dimension are: line and surface.
-  [Question]: what is a plane?
-  [Answer]: A plane is a concept in geometry which is also a surface.
-  [Rule]: IF A be any point on the plane
-    and
-    B is any point on the plane
-    and
-        A is not equal to B
-        and
-    AB is right line between A
-          AND B
-        and
-        P is any point on the AB
 
-          THEN P is on the plane.
+  [Question]: what is a plane?
+  [Answer]: A plane is a concept in geometry which is also a surface. It is defined by the following rule:
+ let
+        P be an instance of plane and
+        A be an instance of point and
+        B be an instance of point and
+        AB be an instance of finite straight line and
+        T be an instance of point
+    if
+        A lies anywhere on P and
+        B lies anywhere on P and
+        A is not equal to B and
+        AB is bounded by A, B and
+        T lies on AB
+    then
+        T lies on P.
   [Question]: what is an angle?
-  [Answer]: An angle is an inclination of 2 angle lines.
+  [Answer]: An angle.A rectilinear angle is a type of angle. It is defined by the following rule:
+ let
+        A be an instance of point and
+        S be an instance of point and
+        B be an instance of point and
+        AS be an instance of finite line and
+        SB be an instance of finite line
+    only if
+        AS is bounded by A, S and
+        SB is bounded by S, B and
+        A not on SB and
+        B not on AS
+    then
+        the construct which includes AS, SB defines an angle.
   [Question]: what is rectilinear angle?
-  [Answer]: A rectilinear angle is an inclination of 2 finite straight lines.
+  [Answer]: A rectilinear angle is an angle. It is defined by the following rule:
+ let
+        A be an instance of point and
+        S be an instance of point and
+        B be an instance of point and
+        AS be an instance of finite straight line and
+        SB be an instance of finite straight line
+    only if
+        AS is bounded by A, S and
+        SB is bounded by S, B and
+        A not on SB and
+        B not on AS
+    then
+        the construct which includes AS, SB defines a rectilinear angle.
   [Question]: what is a right angle?
-  [Answer]: A right angle is an angle.
-It is defined by:
-Given the following premises
-        let AB be the straight line between point A and point B;
-        let point C be on AB;
-        let DC be the straight line between point D and point C;
-        D is not on AB;
-        let angle ACD be the angle between AC and CD;
-        let angle DCB be the angle between DC and CB.
-It follows that
-        angle ACD is a right angle;
-        line DC is perpendicular to line AB.
-If and only if angle ACD is equal to angle DCB.
+  [Answer]: A right angle is an angle. It is defined by the following rule:
+ let
+        A be an instance of a point and
+        B be an instance of a point and
+        C be an instance of a point and
+        D be an instance of a point and
+        AB be an instance of finite straight line and
+        AC be an instance of finite straight line and
+        CD be an instance of finite straight line and
+        CB be an instance of finite straight line and
+        ACD is an instance of angle and
+        DCB is an instance of angle
+    only if
+        C lies on AB and
+        AC is bounded by A,C and
+        CD is bounded by C,D and
+        CB is bounded by C,B and
+        ACD inclines between AC and CD and
+        DCB inclines between DC and CB and
+        A is not on CB and
+        B is not on AC and
+        ACD is equal to DCB
+    then
+        ACD is a right angle and
+        CD is perpendicular to AB.
   [Question]: what is an obtuse angle?
   [Answer]: An obtuse angle is an angle which is greater than a right angle.
+
   [Question]: what is an acute angle?
   [Answer]: An acute angle is an angle which is less than a right angle.
+
   [Question]: is right angle less than an obtuse angle?
   [Answer]: Yes.
-  [Question]: what angle is less than an right angle?
-  [Answer]: All acute angles are less than a right angle.
-  [Question]: what angle is greater than an right angle?
-  [Answer]: All obtuse angles are greater than a right angle.
-  [Question]: what angle is less than an right angle?
-  [Answer]: All acute angles are less than a right angle.
-  [Question]: what angle is greater than an acute angle?
-  [Answer]: All obtuse angles are greater than an acute angle because they are greater than a right angle, and an acute angle is less than a right angle.
-  [Question]: what angle is greater than a right angle?
-  [Answer]: All obtuse angles are greater than a right angle.
-  [Question]: what angle is less than an obtuse angle?
-  [Answer]: All acute angles are less than an obtuse angle because they are less than a right angle, and an obtuse angle is greater than a right angle.
-  [Question]: is a right angle greater than an acute angle?
-  [Answer]: Yes.
-  [Question]: is an obtuse angle less than a right angle?
-  [Answer]: No.
+
   [Question]: what angle is less than a right angle?
   [Answer]: All acute angles are less than a right angle.
+
+  [Question]: what angle is greater than an right angle?
+  [Answer]: All obtuse angles are greater than a right angle.
+
+  [Question]: what angle is greater than an acute angle?
+  [Answer]: All obtuse angles are greater than an acute angle because they are greater than a right angle, and an acute angle is less than a right angle.
+
+  [Question]: what angle is less than an obtuse angle?
+  [Answer]: All acute angles are less than an obtuse angle because they are less than a right angle, and an obtuse angle is greater than a right angle.
+
+  [Question]: is a right angle greater than an acute angle?
+  [Answer]: Yes.
+
+  [Question]: is an obtuse angle less than a right angle?
+  [Answer]: No.
+
+  [Question]: what angle is less than a right angle?
+  [Answer]: All acute angles are less than a right angle.
+
   [Question]: what angles are greater than a right angle?
   [Answer]: All obtuse angles are greater than a right angle.
+
   [Question]: what is a boundary of a circle?
-  [Answer]: a circle is bounded by circumference.
-.
+  [Answer]: A circle is bounded by circumference.
+
   [Question]: what is a circumference?
   [Answer]: A circumference is a line.
-  [Question]: what is circle?
-  [Answer]: A circle is a figure which is bounded by a circumference.
-  [Question]: what is a circle?
-  [Answer]: A circle is a figure which has a center. It is bounded by a circumference.
-  [Question]: what is a center of a circle?
-  [Answer]: A center of circle is a point.
-  [Rule]: IF A is any point on circle circumference
-and
-        B is any point on circle circumference
-and
-        C is a circle center
-and
-        B is not equal A
 
-          THEN the distance between A and C is equal to the distance between B and C.
-  [Question]: how many boundaries is  a diameter bounded by?
+  [Question]: what is circle?
+  [Answer]: A circle is a figure which has a center. It is bounded by a circumference.
+
+  [Question]: what is a center of a circle?
+  [Answer]: A center of circle is a point. It is defined by the following rule:
+ let
+        A be an instance of point and
+        B be an instance of point and
+        C be an instance of point and
+        AC be an instance of finite straight line and
+        BC be an instance of finite straight line and
+        C1 be an instance of circle and
+        CF1 be an instance of circumference
+    if
+        CF1 is a circumference of C1 and
+        A lies on CF1 and
+        C is a center of C1 and
+        B lies on CF1 and
+        AC is bounded by A, C and
+        BC is bounded by B, C and
+        A is not equal to B
+    then
+        AC is equal to BC.
+  [Question]: how many boundaries is a diameter bounded by?
   [Answer]: A diameter is bounded by 2 points. Given that a diameter is a finite straight line.
+
   [Question]: is diameter a finite straight line?
   [Answer]: Yes.
-  [Question]: what is semicircle?
-  [Answer]: A semicircle is something which lies on a circle. It is bounded by a diameter of circle and half ofcircumference.
 
->>> Entered DEBUG REPL <<<
-Type a concept name to inspect it, or 'cont' to continue parsing.
-debug> cont
->>> Exiting DEBUG REPL <<<
+  [Question]: what is semicircle?
+  [Answer]: A semicircle is something which lies on a circle. It is bounded by a diameter of circle and half of circumference.
+
   [Question]: what are boundaries of semicircle?
-  [Answer]: The boundaries of semicircle are a diameter of circle and half ofcircumference.
+  [Answer]: The boundaries of semicircle are a diameter of circle and half of circumference.
+
   [Question]: what is a boundary of rectilinear figure?
-  [Answer]: a rectilinear figure is bounded by finite straight lines.
-.
+  [Answer]: A rectilinear figure is bounded by finite straight lines.
+
   [Question]: what is a rectilinear figure?
   [Answer]: A rectilinear figure is a figure which is bounded by finite straight lines.
+
   [Question]: what is a side of rectilinear figure?
-  [Answer]: a rectilinear figure is bounded by finite straight lines.
-.
+  [Answer]: A rectilinear figure is bounded by finite straight lines.
+
   [Question]: what is a boundary of trilateral figure?
   [Answer]: a trilateral figure is bounded by 3 finite straight lines.
+
   [Question]: how many boundaries is a trilateral figure bounded by?
   [Answer]: A trilateral figure is bounded by 3 finite straight lines.
+
   [Question]: how many sides is a trilateral figure bounded by?
   [Answer]: A trilateral figure is bounded by 3 finite straight lines.
-  [Question]: how many boundaries is a quadrilateral figure  bounded by?
+
+  [Question]: how many boundaries is a quadrilateral figure bounded by?
   [Answer]: A quadrilateral figure is bounded by 4 finite straight lines.
-  [Question]: how many finite straight lines is a multilateral figure  bounded by?
-  [Answer]: A multilateral figure is bounded by greater than 4 finite straight lines.
+
   [Question]: what is a quadrilateral figure?
   [Answer]: A quadrilateral figure is a rectilinear figure which is bounded by 4 finite straight lines.
+
+  [Question]: how many finite straight lines is a multilateral figure bounded by?
+  [Answer]: A multilateral figure is bounded by greater than 4 finite straight lines.
+
   [Question]: how many angles does a triangle has?
   [Answer]: A triangle has 3 angles.
+
   [Question]: how many boundaries is a triangle bounded by?
   [Answer]: A triangle is bounded by 3 finite straight lines. Given that a triangle is a trilateral figure.
+
   [Question]: what is a triangle?
-  [Answer]: A triangle is a trilateral figure which has 3 angles.
+  [Answer]: A triangle is a trilateral figure which has 3 angles An equilateral triangle is a type of triangle. An isosceles triangle is a type of triangle. A scalene triangle is a type of triangle..
+
   [Question]: what is a equilateral triangle?
   [Answer]: An equilateral triangle is a triangle which has all sides equal.
+
   [Question]: what is a isosceles triangle?
   [Answer]: An isosceles triangle is a triangle which has 2 boundaries equal.
+
   [Question]: how many angles does an isosceles triangle has?
   [Answer]: An isosceles triangle has 3 angles.
+
   [Question]: how many boundaries is an isosceles triangle bounded by?
   [Answer]: An isosceles triangle is bounded by 3 finite straight lines. Given that an isosceles triangle is a trilateral figure.
+
   [Question]: how many sides is isosceles triangle bounded by?
   [Answer]: An isosceles triangle is bounded by 3 finite straight lines. Given that an isosceles triangle is a trilateral figure.
+
   [Question]: how many equal boundaries does an isosceles triangle have?
   [Answer]: An isosceles triangle has 2 equal boundaries.
+
   [Question]: how many unequal boundaries does an isosceles triangle have?
   [Answer]: An isosceles triangle has one unequal boundary.
+
   [Question]: how many equal sides does an isosceles triangle have?
   [Answer]: An isosceles triangle has 2 equal boundaries.
+
   [Question]: how many unequal sides does an isosceles triangle have?
   [Answer]: An isosceles triangle has one unequal boundary.
+
   [Question]: what is a scalene triangle?
   [Answer]: A scalene triangle is a triangle which has all sides unequal.
+
   [Question]: how many equal sides does a scalene triangle have?
   [Answer]: none found.
+
   [Question]: how many unequal sides does a scalene triangle have?
   [Answer]: A scalene triangle has 3 unequal boundaries.
+
   [Question]: what is a rightangled triangle?
   [Answer]: A rightangled triangle is a triangle which has a right angle.
+
+  (I already knew that.)
+  (I already knew that.)
   [Question]: what is an obtuseangled triangle?
   [Answer]: An obtuseangled triangle is a triangle which has an obtuse angle.
+
   [Question]: what is an acuteangled triangle?
   [Answer]: An acuteangled triangle is a triangle which has all angles acute.
+
   [Question]: how many angles does a triangle have?
   [Answer]: A triangle has 3 angles.
+
   [Question]: how many sides does a triangle have?
   [Answer]: A triangle is bounded by 3 finite straight lines. Given that a triangle is a trilateral figure.
+
   [Question]: how many right angles does a square have?
   [Answer]: A square has 4 right angles.
+
   [Question]: how many angles does square have?
   [Answer]: A square has 4 right angles.
+
   [Question]: how many equal sides does a square have?
   [Answer]: A square has 4 equal boundaries.
+
   [Question]: what is an oblong?
-  [Answer]: An oblong is a quadrilateral figure which has 4 right angles, unequal adjacent side and equal opposite side.
+  [Answer]: An oblong is a quadrilateral figure which has 4 right angles and unequal adjacent side and equal opposite side.
+
   [Question]: how many right angles does rombus have?
   [Answer]: none found.
+
   [Question]: how many angles does rombus have?
   [Answer]: A rombus has 4 angles.
+
   [Question]: what is a rombus?
   [Answer]: A rombus is a quadrilateral figure which has 4 angles. It does not have a right angle. It has all sides equal.
+
   [Question]: what is a romboid?
   [Answer]: A romboid is a quadrilateral figure which has equal opposite side and unequal adjacent side. It does not have a right angle.
+
+  [LogosState Question]: is X part of Y?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of not equals being part of each other)
+
+  [LogosState Question]: is X lies on Y?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of part implies lies on)
+
+  [LogosState Question]: does X equal Y?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of mutual lies on implies equality)
+
+  [LogosState Question]: is P3 lies between P1 and P2?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of point being in between other two points)
+
+  [LogosState Question]: is L23 truncation of L12?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of point being in between other two points)
+
+  [LogosState Question]: is L12 extension of L23?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of point being in between other two points)
+
+  [LogosState Question]: is L12 extension of L13?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of point being in between other two points)
+
+  [LogosState Question]: is P2 lies between P1 and P3?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of point being in between via extension)
+
+  [LogosState Question]: is L1 a part of L2?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of kinematic persistence)
+
+  [LogosState Question]: does L2 contain L1?
+  [Answer]: Yes, by polar inversion because of common rule condition of kinematic persistence
+
+  [LogosState Question]: is L1 greater than P1?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of extrusion magnitude)
+
+  [LogosState Question]: is P1 an intrusion of L1?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of extrusion magnitude)
+
+  [LogosState Question]: does AB equal BC?
+  [Answer]: Yes, because it was explicitly asserted (common rule common notion 1. Equality Transitivity)
+
+  [LogosState Question]: is A greater than C?
+  [Answer]: Yes, A is greater than a C because it is greater than a B, and a C is less than a B.
+
+  [LogosState Question]: is A less than C?
+  [Answer]: Yes, A is less than a C because it is less than a B, and a C is greater than a B.
+
+  [LogosState Question]: does RR1 equal RR2?
+  [Answer]: Yes, because it was explicitly asserted (postulate 4)
+
+  [LogosState Question]: is Whole greater than Part?
+  [Answer]: Yes, because it was explicitly asserted (postulate 5)
+
+  [LogosState Question]: is X part of Y?
+  [Answer]: Yes, because it was explicitly asserted (common rule condition of not equals being part of each other)
+
+  [LogosState Question]: is T an instance of equilateral triangle?
+  [Answer]: Yes, because it is an instance of equilateral triangle
+
+  [LogosState Question]: is P1 lies on Plane1?
+  [Answer]: Yes, because it was explicitly asserted (common rule incidence transitivity)
+
+  [LogosState Question]: does CA equal CB?
+  [Answer]: Yes, because it was explicitly asserted (common rule equality symmetry)
+
+  [LogosState Question]: is AC equal to BC?
+  [Answer]: Yes, because it was explicitly asserted (common rule equality symmetry)
+
+  [LogosState Question]: is T1 an equilateral triangle?
+  [Answer]: Yes, because it is an instance of equilateral triangle
+
+  [LogosState Question]: does Seg2 equal Seg1?
+  [Answer]: Yes, because it was explicitly asserted (common rule equality symmetry)
+
+  [LogosState Question]: is P part of S?
+  [Answer]: Yes, because it was explicitly asserted (common rule part whole transitivity)
+
+  [LogosState Question]: is C1 lies on Seg?
+  [Answer]: Yes, because it was explicitly asserted (common rule point on segment)
+
+  [LogosState Question]: is R1 equal to R3?
+  [Answer]: Yes, because it was explicitly asserted (postulate 4)
+
+  [LogosState Question]: is L2 perpendicular to L1?
+  [Answer]: Yes, because it was explicitly asserted (common rule perpendicularity symmetry)
+
+  [LogosState Question]: is P1 lies on L2?
+  [Answer]: Yes, because it was explicitly asserted (common rule equality substitution in incidence)
+
+  [LogosState Question]: is P1 lies on D1?
+  [Answer]: Yes, because it was explicitly asserted (common rule diameter center relationship)
+
+  [Answer]: draw line line_1.
+draw instance of equilateral triangle equilateral_triangle_2 bounded by line_1,BD,DA.
+draw line line_3 as an extension of DB.
+draw circle circle_4 with center M and passing through N.
+draw point point_5 which lies at intersection of circle_4 and line_3.
+draw line line_6 as an extension of DA.
+draw circle circle_7 with center D and passing through point_5.
+draw point X which lies at intersection of circle_7 and line_6.
+draw instance of anything anything_8 bounded by K,M,N,X.
+draw instance of anything anything_9 bounded by K, M, N.
+  [Answer]: draw circle circle_1 with center Y and passing through X.
+draw circle circle_2 with center X and passing through Y.
+draw point Z which lies at intersection of circle_1 and circle_2.
+draw line ZX.
+draw line YZ.
+draw instance of equilateral triangle equilateral_triangle_3 bounded by XY,ZX,YZ.
+draw line XY.
+
+  [Assertion Passed]: Last output LogosState dump matched.
+
+  [Logos State Dump]: Book1 proposition 2 (Target)
+  start logos state Book1 proposition 2 (Target).
+    A is an instance of point.
+    A position is known.
+    B is an instance of point.
+    B position is known.
+    C is an instance of point.
+    C position is known.
+    BC is an instance of finite straight line.
+    BC equal to AL.
+    BC is bounded by B, C.
+    L is an instance of point.
+    L position is unknown.
+    AL is an instance of finite straight line.
+    AL equal to BC.
+    AL is bounded by A, L.
+  end Logos State Book1 proposition 2 (Target).
+
+  [Test Summary]: 121 tests run, 0 failures.
+Press any key to continue . . .
