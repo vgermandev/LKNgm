@@ -25,6 +25,7 @@ The parser utilizes a recursive descent approach to translate high-level English
 ### I. Robust Semantic Regression (Tokenized Assertion)
 One of the project's most significant software engineering breakthroughs is the **Self-Regression Suite**. By implementing `tokenizeForComparison`, the engine decouples "Logical Truth" from "Visual Formatting." 
 *   **Innovation**: The system ignores case, whitespace, and punctuation variations, focusing purely on the semantic token sequence. This allows the engine's output formatting to evolve without breaking the 89+ foundational tests.
+*   **Update**: Now reaching 121 verified tokens/assertions.
 
 ### II. Embedded Proofs (Constructive Logic)
 In Semantic LKN, the **Construction IS the Proof**. 
@@ -104,7 +105,7 @@ The engine recognizes that the transition from quantum potential to classical re
 
 ### XVI. Physical Levelization and Repo Hygiene
 The project adheres to strict dependency management and repository cleanliness.
-*   **Innovation**: By consolidating disparate test files into a single **Super-Regression Baseline** (`propositionsregression.lkn`) and removing redundant build artifacts, the architecture minimizes "Baseline Drift." This ensures that the engine's reasoning is always measured against a single, unified source of truth, facilitating the transition to complex GSVM execution.
+*   **Innovation**: By consolidating disparate test files into a single **Super-Regression Baseline** (`lknRegression.lkn`) and removing redundant build artifacts, the architecture minimizes "Baseline Drift." This ensures that the engine's reasoning is always measured against a single, unified source of truth, facilitating the transition to complex GSVM execution.
 
 
 
