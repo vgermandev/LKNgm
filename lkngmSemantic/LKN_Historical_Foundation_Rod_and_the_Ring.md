@@ -11,6 +11,9 @@ Long before the organized metrology of Sumer, humanity's first steps towards for
     *   **Examples:** The Ishango Bone (Africa, ~20,000 BC) and the Lebombo Bone (Swaziland, ~35,000 BC) are prime examples, displaying deliberate series of notches.
     *   **Purpose:** These marks served as **tally systems**, recording lunar cycles, hunting tallies, or other discrete events. They were a tangible representation of "how many."
    *   **From Mark to Measure:** In this prehistoric stage, the "Rod" (bone) had **no relationship to a straight line**. It was purely a medium to remember discrete quantity. The notches were tally points, not spatial markers.
+*   **The First Scaling (Earliest Art):**
+    *   **Totem Animals:** Cave paintings represent the earliest externalization of **Systasis** (Form). By creating scaled-down images of animals, prehistoric humans demonstrated an intuitive grasp of **Relational Invariance**. 
+    *   **Form over Fact:** The preservation of an animal's likeness through scaling proves that the mind recognized the "Analogia Plegma" (mesh of proportions) as the invariant truth, independent of the "Logos Physicos" (physical size).
     *   **LKN Connection:** This prehistoric "proto-rod" is the genesis of the `number` property within LKN's `Something` model. It's the earliest `ActionSpec` for `counting` and `quantification`, laying the groundwork for the later `extrusion` of continuous magnitude. It's the first step in moving from the qualitative "this thing exists" to the quantitative "this thing exists *this many times*."
 
 This era marks the transition from purely qualitative observation to the quantitative representation of the world, a foundational leap for all subsequent mathematics and science.
@@ -25,6 +28,7 @@ In the earliest civilizations, geometric principles were not abstract but deeply
     *   **The Gudea Ruler as LKN Ratio:** The Sumerian *Shusi* (Finger) as a fraction of a *Kush* (Cubit) is the direct analog of the LKN `Something` ratio system. A position defined by `nominator: 5`, `denominator: 30`, and `unit: AB` is the digital actualization of Gudea’s lap-ruler.
     *   **Discretizing the Continuous:** This represents the birth of the **Geometric Data Type**. By marking the rod, the Sumerians transformed the "Evenly Free" motion of the line into a rational, addressable space. 
     *   **Egyptian:** The cubit rod was a standard of linear measure. The concept of a straight line was also manifested through the tautness of a stretched cord, used by *harpedonaptai* (rope-stretchers) for laying out temple foundations and pyramid bases. This taut string embodied "tension without torque," a physical manifestation of a straight line.
+    *   **The Egyptian Grid (The Invariant Canon):** Archaeological evidence from tomb walls reveals that Egyptians used red-ink squared grids as a **Reference Frame**. By defining locations as ratios of these grids, they ensured that the **Systasis** (form) of a figure or building remained invariant regardless of scale.
 
 *   **The Ring (Circularity & Containment):**
     *   **Sumerian/Babylonian:** Often depicted as a coiled rope or a circular measuring cord (*dur*). It symbolized the power of containment, the city perimeter, the granary, and the cyclical nature of time and celestial bodies.
@@ -152,6 +156,7 @@ By bringing Galileo and Newton to 300 BC, LKN Semantic achieves a "Unified Logos
 | **300 BC** | **Euclid** | The Semantic Voice | Controlled Natural Language (CNL) |
 | **1630 AD**| **Galileo** | The Verification | `RelInferenceEngine` & Observation |
 | **1680 AD**| **Newton** | The Motion (Fluxion) | `draw` / `extrusion` / `ActionSpec` |
+| **1637 AD**| **Descartes**| The Metric Mapping | `Logos Physicos` (Coordinates) |
 | **1899 AD**| **Hilbert** | The Rigor | Structural Provenance & Relational Graph |
 
 This synthesis ensures that when a user asks LKN, *"What is a line?"*, the answer carries the weight of 2,000 years of physics and logic. A line is a Euclidean concept, a Hilbertian relation, a Galilean measurement, and a Newtonian fluxion—all sublated into a single **Something**.

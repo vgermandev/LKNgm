@@ -1,4 +1,5 @@
-File read into string. Size: 50157 characters.
+  [System]: Loaded file: test\lknRegression.lkn (Size: 236 characters)
+  [System]: Loaded file: test\euclidElements.lkn (Size: 51941 characters)
   [Question]: what are domains of knowledge?
   [Answer]: Domains of knowledge are art, mechanics and geometry.
 
@@ -429,24 +430,36 @@ File read into string. Size: 50157 characters.
   [LogosState Question]: is P1 lies on D1?
   [Answer]: Yes, because it was explicitly asserted (common rule diameter center relationship)
 
-  [Answer]: draw line line_1.
-draw instance of equilateral triangle equilateral_triangle_2 bounded by line_1,BD,DA.
-draw line line_3 as an extension of DB.
-draw circle circle_4 with center M and passing through N.
-draw point point_5 which lies at intersection of circle_4 and line_3.
-draw line line_6 as an extension of DA.
-draw circle circle_7 with center D and passing through point_5.
-draw point X which lies at intersection of circle_7 and line_6.
-draw instance of anything anything_8 bounded by K,M,N,X.
-draw instance of anything anything_9 bounded by K, M, N.
+
+  [Logos State Dump]: Book1 proposition 1 (Target)
+  start logos state Book1 proposition 1 (Target).
+    A is an instance of point.
+    A position is known.
+    B is an instance of point.
+    B position is known.
+    AB is an instance of finite straight line.
+    AB is bounded by A, B.
+    C is an instance of point.
+    AC is an instance of finite straight line.
+    AC is bounded by A, C.
+    BC is an instance of finite straight line.
+    BC is bounded by B, C.
+    ABC is an instance of equilateral triangle.
+    ABC is bounded by AB, AC, BC.
+  end logos state Book1 proposition 1 (Target).
+
+draw circle circle_1 with center Y and passing through X.
+draw circle circle_2 with center X and passing through Y.
+draw point Z which lies at intersection of circle_1 and circle_2.
+draw line ZX.
+draw line YZ.
+draw instance of equilateral triangle equilateral_triangle_3 bounded by XY,ZX,YZ.
   [Answer]: draw circle circle_1 with center Y and passing through X.
 draw circle circle_2 with center X and passing through Y.
 draw point Z which lies at intersection of circle_1 and circle_2.
 draw line ZX.
 draw line YZ.
 draw instance of equilateral triangle equilateral_triangle_3 bounded by XY,ZX,YZ.
-draw line XY.
-
   [Assertion Passed]: Last output LogosState dump matched.
 
   [Logos State Dump]: Book1 proposition 2 (Target)
@@ -465,7 +478,255 @@ draw line XY.
     AL is an instance of finite straight line.
     AL equal to BC.
     AL is bounded by A, L.
-  end Logos State Book1 proposition 2 (Target).
+  end logos state Book1 proposition 2 (Target).
 
-  [Test Summary]: 121 tests run, 0 failures.
-Press any key to continue . . .
+draw circle circle_1 with center N and passing through K.
+draw circle circle_2 with center K and passing through N.
+draw point point_3 which lies at intersection of circle_1 and circle_2.
+draw line line_4.
+draw line line_5.
+draw instance of equilateral triangle equilateral_triangle_6 bounded by KN,line_4,line_5.
+  [Answer]: draw circle circle_1 with center N and passing through K.
+draw circle circle_2 with center K and passing through N.
+draw point point_3 which lies at intersection of circle_1 and circle_2.
+draw line line_4.
+draw line line_5.
+draw instance of equilateral triangle equilateral_triangle_6 bounded by KN,line_4,line_5.
+  [Assertion Passed]: Last output LogosState dump matched.
+  [System]: Loaded file: test\ScriberWorking.lkn (Size: 4165 characters)
+  [Question]: how many sar is area of palm_grove?
+  [Physicos Answer]: palm_grove has area of 200 sar.
+
+  [Question]: how many iku is area of palm_grove?
+  [Physicos Answer]: palm_grove has area of 2 iku.
+
+  [Question]: how many eshe is area of palm_grove?
+  [Physicos Answer]: palm_grove has area of 1/3 eshe.
+
+  [Question]: how many sar is area of large_field?
+  [Physicos Answer]: large_field has area of 1800 sar.
+
+  [Question]: how many bur is area of large_field?
+  [Physicos Answer]: large_field has area of 1 bur.
+
+  [Question]: how many iku is area of small_patch?
+  [Physicos Answer]: small_patch has area of 1/2 iku.
+
+  [Question]: what is a ratio between breadth of palm_grove and length of palm_grove?
+  [Physicos Answer]: The ratio between breadth of palm_grove and length of palm_grove is 1/2.
+
+  [Question]: what is a ratio between total_allocation of temple_worker and daily_ration of temple_worker?
+  [Physicos Answer]: The ratio between total_allocation of temple_worker and daily_ration of temple_worker is 60.
+
+  [System]: Loaded file: test\ScriberWalk.lkn (Size: 7408 characters)
+  [Question]: how much danna men travel from house to gate?
+  [Physicos Answer]: men traveled 1r60 danna.
+
+  [Question]: how long men travel from gate to house?
+  [Physicos Answer]: men traveled for 1/30 hours.
+
+  [Question]: how far men travel from gate to house?
+  [Physicos Answer]: men traveled 300 kush.
+
+  [Question]: how long men travel from house to gate?
+  [Physicos Answer]: men traveled for 1/30 hours.
+
+  [Question]: how far men travel from house to gate?
+  [Physicos Answer]: men traveled 300 kush.
+
+  [Question]: how much danna men travel from gate to market?
+  [Physicos Answer]: men traveled 2r60 danna.
+
+  [Question]: how long men travel from market to gate?
+  [Physicos Answer]: men traveled for 1/15 hours.
+
+  [Question]: how far men travel from market to gate?
+  [Physicos Answer]: men traveled 600 kush.
+
+  [Question]: how long men travel from gate to market?
+  [Physicos Answer]: men traveled for 1/15 hours.
+
+  [Question]: how far men travel from gate to market?
+  [Physicos Answer]: men traveled 600 kush.
+
+  [Question]: how much danna men travel from house to market?
+  [Physicos Answer]: men traveled 1/20 danna.
+
+  [Question]: how much danna men travel from market to temple?
+  [Physicos Answer]: men traveled 3r60 danna.
+
+  [Question]: how long men travel from temple to market?
+  [Physicos Answer]: men traveled for 1/10 hours.
+
+  [Question]: how far men travel from temple to market?
+  [Physicos Answer]: men traveled 900 kush.
+
+  [Question]: how long men travel from market to temple?
+  [Physicos Answer]: men traveled for 1/10 hours.
+
+  [Question]: how far men travel from market to temple?
+  [Physicos Answer]: men traveled 900 kush.
+
+  [Question]: how much danna men travel from house to temple?
+  [Physicos Answer]: men traveled 1/10 danna.
+
+  [Question]: how much danna men travel from gate to well?
+  [Physicos Answer]: men traveled 3/20 danna.
+
+  [Question]: how much danna men travel from gate to storehouse?
+  [Physicos Answer]: men traveled 1/6 danna.
+
+  [Question]: how much danna men travel from house to well?
+  [Physicos Answer]: men traveled 1/6 danna.
+
+  [Question]: how much danna men travel from market to storehouse?
+  [Physicos Answer]: men traveled 1/5 danna.
+
+  [Question]: how much danna men travel from house to temple?
+  [Physicos Answer]: men traveled 1/10 danna.
+
+  [Question]: what are all paths men travel from house to temple?
+  [Physicos Answer]: Paths from house to temple: 1. via gate and market (1/10 danna); 2. via gate and fork (1/5 danna).
+
+  [Question]: what is shortest path men travel from house to temple?
+  [Physicos Answer]: Shortest path from house to temple is via gate and market (1/10 danna).
+
+  [Question]: how much danna men travel from temple to storehouse?
+  [Physicos Answer]: men traveled 13r60 danna.
+
+  [Question]: how long men travel from well to temple?
+  [Physicos Answer]: men traveled for 2/5 hours.
+
+  [Question]: how far men travel from house to storehouse?
+  [Physicos Answer]: men traveled 3300 kush.
+
+  [Question]: how much danna men travel from market to well?
+  [Physicos Answer]: men traveled 11r60 danna.
+
+  [Question]: how much danna men travel from well to market?
+  [Physicos Answer]: men traveled 8r60 danna.
+
+  [Question]: what is shortest path men travel from market to well?
+  [Physicos Answer]: Shortest path from market to well is direct (8r60 danna).
+
+  [Question]: how much danna men travel from house to storehouse?
+  [Physicos Answer]: men traveled 10r60 danna.
+
+  [Question]: how far men travel from house to storehouse?
+  [Physicos Answer]: men traveled 3000 kush.
+
+  [Question]: how long men travel from well to temple?
+  [Physicos Answer]: men traveled for 11/30 hours.
+
+  [Question]: how far men travel from well to temple?
+  [Physicos Answer]: men traveled 3300 kush.
+
+  [Question]: how much danna men travel from gate to crossroad?
+  [Physicos Answer]: men traveled 11r60 danna.
+
+  [Question]: what is shortest path men travel from market to crossroad?
+  [Physicos Answer]: Shortest path from market to crossroad is direct (12r60 danna).
+
+  [Question]: how much danna men travel from house to crossroad?
+  [Physicos Answer]: men traveled 1/5 danna.
+
+  [System]: Loaded file: test\UrWalking.lkn (Size: 12612 characters)
+  [Question]: how much danna men travel from north_gate to harbor?
+  [Physicos Answer]: men traveled 5r60 danna.
+
+  [Question]: how far men travel from north_gate to harbor?
+  [Physicos Answer]: men traveled 1500 kush.
+
+  [Question]: how long men travel from north_gate to harbor?
+  [Physicos Answer]: men traveled for 1/6 hours.
+
+  [Question]: how far men travel from harbor to ah_quarter?
+  [Physicos Answer]: men traveled 3000 kush.
+
+  [Question]: how much danna men travel from north_gate to ah_quarter?
+  [Physicos Answer]: men traveled 1/4 danna.
+
+  [Question]: how far men travel from ah_quarter to giparu?
+  [Physicos Answer]: men traveled 3900 kush.
+
+  [Question]: how long men travel from north_gate to ziggurat?
+  [Physicos Answer]: men traveled for 5/6 hours.
+
+  [Question]: what is shortest path men travel from harbor to giparu?
+  [Physicos Answer]: Shortest path from harbor to giparu is direct (12r60 danna).
+
+  [Question]: how to travel from harbor to giparu and visit ziggurat?
+  [Physicos Answer]: To travel from harbor to giparu via ziggurat, the total distance is 3/10 danna.
+
+  [Question]: how to get from north_gate to giparu?
+  [Physicos Answer]: Directions from north_gate to giparu:
+  1. Start at north_gate then go to harbor then go to giparu (Total: 17r60 danna).
+  2. Start at north_gate then go to harbor then go to warehouse then go to ah_quarter then go to ehursag_palace then go to enunmah then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 7/15 danna).
+  3. Start at north_gate then go to harbor then go to warehouse then go to ah_quarter then go to scribal_school then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 11/20 danna).
+
+  [Question]: how far men travel from harbor to giparu?
+  [Physicos Answer]: men traveled 3600 kush.
+
+  [Question]: what are all paths men travel from harbor to giparu?
+  [Physicos Answer]: Paths from harbor to giparu: 1. direct (12r60 danna); 2. via warehouse and ah_quarter and ehursag_palace and enunmah and ziggurat and shrine_of_nanna (23r60 danna); 3. via warehouse and ah_quarter and scribal_school and ziggurat and shrine_of_nanna (7/15 danna).
+
+  [Question]: how much danna men travel from north_gate to giparu?
+  [Physicos Answer]: men traveled 17r60 danna.
+
+  [Question]: how far men travel from north_gate to royal_cemetery?
+  [Physicos Answer]: men traveled 5700 kush.
+
+  [Question]: how much danna men travel from north_gate to royal_cemetery?
+  [Physicos Answer]: men traveled 19r60 danna.
+
+  [Question]: how to get from west_harbor to enunmah?
+  [Physicos Answer]: Directions from west_harbor to enunmah:
+  1. Start at west_harbor then go to ziggurat then go to enunmah (Total: 7/30 danna).
+  2. Start at west_harbor then go to ziggurat then go to scribal_school then go to ah_quarter then go to ehursag_palace then go to enunmah (Total: 7/12 danna).
+  3. Start at west_harbor then go to ziggurat then go to shrine_of_nanna then go to giparu then go to harbor then go to warehouse then go to ah_quarter then go to ehursag_palace then go to enunmah (Total: 3/4 danna).
+
+  [Question]: how far men travel from west_harbor to enunmah?
+  [Physicos Answer]: men traveled 4200 kush.
+
+  [Question]: how to get from ehursag_palace to giparu?
+  [Physicos Answer]: Directions from ehursag_palace to giparu:
+  1. Start at ehursag_palace then go to enunmah then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 2/15 danna).
+  2. Start at ehursag_palace then go to ah_quarter then go to scribal_school then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 23r60 danna).
+  3. Start at ehursag_palace then go to ah_quarter then go to warehouse then go to harbor then go to giparu (Total: 9/20 danna).
+  4. Start at ehursag_palace then go to enunmah then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse then go to harbor then go to giparu (Total: 7/10 danna).
+
+  [Question]: how much danna men travel from west_harbor to north_gate?
+  [Physicos Answer]: men traveled 8/15 danna.
+
+  [Question]: how far men travel from ehursag_palace to warehouse?
+  [Physicos Answer]: men traveled 3300 kush.
+
+  [Question]: what are all paths men travel from ziggurat to ah_quarter?
+  [Physicos Answer]: Paths from ziggurat to ah_quarter: 1. via enunmah and ehursag_palace (1/6 danna); 2. via scribal_school (1/4 danna); 3. via shrine_of_nanna and giparu and harbor and warehouse (5/12 danna).
+
+  [Question]: how to get from west_harbor to north_gate?
+  [Physicos Answer]: Directions from west_harbor to north_gate:
+  1. Start at west_harbor then go to ziggurat then go to shrine_of_nanna then go to giparu then go to harbor then go to north_gate (Total: 8/15 danna).
+  2. Start at west_harbor then go to ziggurat then go to enunmah then go to ehursag_palace then go to ah_quarter then go to warehouse then go to harbor then go to north_gate (Total: 37r60 danna).
+  3. Start at west_harbor then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse then go to harbor then go to north_gate (Total: 7/10 danna).
+
+  [Question]: how much danna men travel from ehursag_palace to north_gate?
+  [Physicos Answer]: men traveled 1/3 danna.
+
+  [Question]: how long men travel from west_harbor to royal_cemetery?
+  [Physicos Answer]: men traveled for 17/30 hours.
+
+  [Question]: how far men travel from scribal_school to ehursag_palace?
+  [Physicos Answer]: men traveled 3600 kush.
+
+  [Question]: how much danna men travel from west_harbor to warehouse?
+  [Physicos Answer]: men traveled 7/15 danna.
+
+  [Question]: how to get from royal_cemetery to warehouse?
+  [Physicos Answer]: Directions from royal_cemetery to warehouse:
+  1. Start at royal_cemetery then go to giparu then go to harbor then go to warehouse (Total: 3/10 danna).
+  2. Start at royal_cemetery then go to giparu then go to shrine_of_nanna then go to ziggurat then go to enunmah then go to ehursag_palace then go to ah_quarter then go to warehouse (Total: 7/20 danna).
+  3. Start at royal_cemetery then go to giparu then go to shrine_of_nanna then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse (Total: 13/30 danna).
+
+
+  [Test Summary]: 193 tests run, 0 failures.

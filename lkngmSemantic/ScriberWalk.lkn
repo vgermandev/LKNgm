@@ -1,0 +1,151 @@
+~speech parts~
+men is a noun.
+place is a noun.
+Danna is a noun.
+kush is a noun.
+hour is a noun.
+hours is a noun.
+walk is a noun.
+walks is a noun.
+scriber is a noun.
+
+~general knowledge~
+~mesurment rules~
+a danna is equal to 2 hours.
+a danna is equal to 18000 kush.
+
+~very first travel leg~
+start Physicos State example 1.
+
+men is an instance of scriber.
+house is an instance of place.
+gate is an instance of place.
+market is an instance of place.
+temple is an instance of place.
+fork is an instance of place.
+well is an instance of place.
+storehouse is an instance of place.
+crossroad is an instance of place.
+
+~let add first leg from house to gate~
+men travels from house to gate for 1r60 danna.
+how much danna men travel from house to gate?
+assert last answer: `men traveled 1r60 danna.` error message: `house to gate danna mismatch`
+how long men travel from gate to house?
+assert last answer: `men traveled for 1/30 hours.` error message: `gate to house time mismatch`
+how far men travel from gate to house?
+assert last answer: `men traveled 300 kush.` error message: `gate to house distance mismatch`
+how long men travel from house to gate?
+assert last answer: `men traveled for 1/30 hours.` error message: `house to gate time mismatch`
+how far men travel from house to gate?
+assert last answer: `men traveled 300 kush.` error message: `house to gate distance mismatch`
+
+~let add second leg from gate to market~
+~let add second leg from gate to market~
+men travels from gate to market for 2r60 danna.
+how much danna men travel from gate to market?
+assert last answer: `men traveled 2r60 danna.` error message: `gate to market danna mismatch`
+how long men travel from market to gate?
+assert last answer: `men traveled for 1/15 hours.` error message: `market to gate time mismatch`
+how far men travel from market to gate?
+assert last answer: `men traveled 600 kush.` error message: `market to gate distance mismatch`
+how long men travel from gate to market?
+assert last answer: `men traveled for 1/15 hours.` error message: `gate to market time mismatch`
+how far men travel from gate to market?
+assert last answer: `men traveled 600 kush.` error message: `gate to market distance mismatch`
+
+how much danna men travel from house to market?
+assert last answer: `men traveled 1/20 danna.` error message: `multi-leg path house-market danna mismatch`
+
+~let add third leg from market to temple~
+~let add third leg from market to temple~
+men travels from market to temple for 3r60 danna.
+how much danna men travel from market to temple?
+assert last answer: `men traveled 3r60 danna.` error message: `market to temple danna mismatch`
+how long men travel from temple to market?
+assert last answer: `men traveled for 1/10 hours.` error message: `temple to market time mismatch`
+how far men travel from temple to market?
+assert last answer: `men traveled 900 kush.` error message: `temple to market distance mismatch`
+how long men travel from market to temple?
+assert last answer: `men traveled for 1/10 hours.` error message: `market to temple time mismatch`
+how far men travel from market to temple?
+assert last answer: `men traveled 900 kush.` error message: `market to temple distance mismatch`
+
+how much danna men travel from house to temple?
+assert last answer: `men traveled 1/10 danna.` error message: `multi-leg path house-temple danna mismatch`
+
+~let add intersection fork with 3 paths~
+men travels from gate to fork for 4r60 danna.
+men travels from fork to well for 5r60 danna.
+men travels from fork to storehouse for 6r60 danna.
+how much danna men travel from gate to well?
+assert last answer: `men traveled 3/20 danna.` error message: `gate to well via fork danna mismatch`
+how much danna men travel from gate to storehouse?
+assert last answer: `men traveled 1/6 danna.` error message: `gate to storehouse via fork danna mismatch`
+how much danna men travel from house to well?
+assert last answer: `men traveled 1/6 danna.` error message: `house to well via fork danna mismatch`
+how much danna men travel from market to storehouse?
+assert last answer: `men traveled 1/5 danna.` error message: `market to storehouse via fork danna mismatch`
+
+~let add second path to temple via fork~
+men travels from fork to temple for 7r60 danna.
+how much danna men travel from house to temple?
+assert last answer: `men traveled 1/10 danna.` error message: `path selection house-temple danna mismatch`
+
+what are all paths men travel from house to temple?
+assert last answer: `Paths from house to temple: 1. via gate and market (1/10 danna); 2. via gate and fork (1/5 danna).` error message: `all paths house to temple mismatch`
+
+what is shortest path men travel from house to temple?
+assert last answer: `Shortest path from house to temple is via gate and market (1/10 danna).` error message: `shortest path house to temple mismatch`
+
+how much danna men travel from temple to storehouse?
+assert last answer: `men traveled 13r60 danna.` error message: `temple to storehouse danna mismatch`
+
+how long men travel from well to temple?
+assert last answer: `men traveled for 2/5 hours.` error message: `well to temple time mismatch`
+
+how far men travel from house to storehouse?
+assert last answer: `men traveled 3300 kush.` error message: `house to storehouse distance mismatch`
+
+how much danna men travel from market to well?
+assert last answer: `men traveled 11r60 danna.` error message: `market to well danna mismatch`
+
+~let add shortcut legs to test smarter pathfinding~
+men travels from well to market for 8r60 danna.
+men travels from storehouse to house for 10r60 danna.
+
+how much danna men travel from well to market?
+assert last answer: `men traveled 8r60 danna.` error message: `well to market shortcut danna mismatch`
+
+what is shortest path men travel from market to well?
+assert last answer: `Shortest path from market to well is direct (8r60 danna).` error message: `shortest path market to well mismatch`
+
+how much danna men travel from house to storehouse?
+assert last answer: `men traveled 10r60 danna.` error message: `house to storehouse danna shortcut mismatch`
+
+how far men travel from house to storehouse?
+assert last answer: `men traveled 3000 kush.` error message: `house to storehouse distance updated mismatch`
+
+how long men travel from well to temple?
+assert last answer: `men traveled for 11/30 hours.` error message: `well to temple time updated via shortcut mismatch`
+
+how far men travel from well to temple?
+assert last answer: `men traveled 3300 kush.` error message: `well to temple distance updated via shortcut mismatch`
+
+~let add intersection crossroad with 4 entries~
+men travels from gate to crossroad for 11r60 danna.
+men travels from market to crossroad for 12r60 danna.
+men travels from temple to crossroad for 13r60 danna.
+men travels from well to crossroad for 14r60 danna.
+
+how much danna men travel from gate to crossroad?
+assert last answer: `men traveled 11r60 danna.` error message: `gate to crossroad danna mismatch`
+
+what is shortest path men travel from market to crossroad?
+assert last answer: `Shortest path from market to crossroad is direct (12r60 danna).` error message: `shortest path market to crossroad mismatch`
+
+how much danna men travel from house to crossroad?
+assert last answer: `men traveled 1/5 danna.` error message: `house to crossroad danna mismatch`
+~Path: house -> gate (1/60) + gate -> crossroad (11/60) = 12/60 = 1/5 danna~
+
+end Physicos State example 1.

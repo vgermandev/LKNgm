@@ -1,0 +1,185 @@
+~speech parts~
+men is a noun.
+place is a noun.
+Danna is a noun.
+kush is a noun.
+hour is a noun.
+hours is a noun.
+scriber is a noun.
+
+~metrology rules~
+
+danna is equal to 2 hours.
+danna is equal to 18000 kush.
+
+
+~Topography of the City of Ur (Ur III Period)~
+~ The City of Ur was one of the most important Sumerian city-states in ancient Mesopotamia. ~
+~ Archaeological reconstructions are primarily based on the excavations of Sir Leonard Woolley (1922-1934). ~
+~ During the Ur III period (c. 2112–2004 BC), the city was a hub of bureaucracy, trade, and religious devotion. ~
+
+start Physicos State Ur_City_Plan.
+men is an instance of scriber.
+north_gate is an instance of place. ~ Part of the massive city walls rebuilt by Ur-Nammu. ~
+harbor is an instance of place. ~ The North Harbor, the primary commercial entry point for goods from the Persian Gulf. ~
+ah_quarter is an instance of place. ~ Woolley's 'Area AH', a dense residential district showing the domestic life of Ur's citizens. ~
+ziggurat is an instance of place. ~ The E-temen-ni-guru, the Great Ziggurat built by Ur-Nammu, dedicated to the moon god Nanna. ~
+giparu is an instance of place. ~ The Gipar-ku, residence of the En-priestess; site of the famous 'Enheduanna' disk. ~
+royal_cemetery is an instance of place. ~ Site of the 'Standard of Ur' and the opulent tombs of Queen Puabi and King Meskalamdug. ~
+warehouse is an instance of place. ~ Administrative storage centers near the quay walls used for grain and textile redistribution. ~
+scribal_school is an instance of place. ~ Houses like 'No. 1 Broad Street' in the AH quarter, where thousands of 'lentil' tablets were found. ~
+shrine_of_nanna is an instance of place. ~ The most sacred point of the city, located at the summit of the Ziggurat complex. ~
+ehursag_palace is an instance of place. ~ The 'House of the Mountain', the royal palace of the Ur III kings. ~
+enunmah is an instance of place. ~ The ancient treasury and storehouse of the temple complex. ~
+west_harbor is an instance of place. ~ The commercial gateway to the Euphrates river trade routes. ~
+
+~Initial walking legs based on historical proximity~
+men travels from north_gate to harbor for 5r60 danna.
+men travels from harbor to warehouse for 4r60 danna.
+men travels from warehouse to ah_quarter for 6r60 danna.
+men travels from ah_quarter to scribal_school for 7r60 danna.
+men travels from scribal_school to ziggurat for 8r60 danna.
+men travels from ziggurat to shrine_of_nanna for 2r60 danna.
+men travels from shrine_of_nanna to giparu for 1r60 danna.
+men travels from giparu to royal_cemetery for 2r60 danna.
+
+~ New Royal and Commercial Circuits ~
+men travels from ziggurat to enunmah for 2r60 danna.
+men travels from enunmah to ehursag_palace for 3r60 danna.
+men travels from ehursag_palace to ah_quarter for 5r60 danna.
+men travels from ziggurat to west_harbor for 12r60 danna.
+~Tests for direct legs~
+how much danna men travel from north_gate to harbor?
+assert last answer: `men traveled 5r60 danna.` error message: `north_gate to harbor danna mismatch`
+
+how far men travel from north_gate to harbor?
+assert last answer: `men traveled 1500 kush.` error message: `north_gate to harbor distance mismatch`
+~ (5/60) * 18000 = 1500 ~
+
+how long men travel from north_gate to harbor?
+assert last answer: `men traveled for 1/6 hours.` error message: `north_gate to harbor time mismatch`
+~ (5/60) * 2 = 10/60 = 1/6 ~
+
+~Test for a pass-through building~
+how far men travel from harbor to ah_quarter?
+assert last answer: `men traveled 3000 kush.` error message: `harbor to residential quarter via warehouse distance mismatch`
+~ (4/60 + 6/60) * 18000 = 3000 ~
+
+~Tests for cumulative multi-leg paths~
+how much danna men travel from north_gate to ah_quarter?
+assert last answer: `men traveled 1/4 danna.` error message: `gate to residential quarter danna mismatch`
+~ 5/60 (north_gate->harbor) + 4/60 (harbor->warehouse) + 6/60 (warehouse->ah_quarter) = 15/60 = 1/4 ~
+
+how far men travel from ah_quarter to giparu?
+assert last answer: `men traveled 3900 kush.` error message: `quarter to giparu distance mismatch`
+~ Shortest path: ah_quarter->ehursag_palace (5) + ehursag_palace->enunmah (3) + enunmah->ziggurat (2) + ziggurat->shrine_of_nanna (2) + shrine_of_nanna->giparu (1) = 13/60 danna. (13/60) * 18000 = 3900 ~
+
+how long men travel from north_gate to ziggurat?
+assert last answer: `men traveled for 5/6 hours.` error message: `total walk to ziggurat time mismatch`
+~ Shortest path: north_gate->harbor (5) + harbor->warehouse (4) + warehouse->ah_quarter (6) + ah_quarter->ehursag_palace (5) + ehursag_palace->enunmah (3) + enunmah->ziggurat (2) = 25/60 danna. (25/60) * 2 hours = 5/6 hours. ~
+
+~Adding a shortcut to test shortest path logic~
+~The 'processional way' shortcut from the harbor to the palace complex (Giparu)~
+men travels from harbor to giparu for 12r60 danna.
+
+what is shortest path men travel from harbor to giparu?
+assert last answer: `Shortest path from harbor to giparu is direct (12r60 danna).` error message: `shortest path giparu mismatch`
+~ Direct is 12/60. Via ah_quarter and ziggurat is (10+15+3)/60 = 28/60. ~
+
+how to travel from harbor to giparu and visit ziggurat?
+assert last answer: `To travel from harbor to giparu via ziggurat, the total distance is 3/10 danna.` error message: `harbor to giparu via ziggurat mismatch`
+~ (harbor->warehouse->ah_quarter->scribal_school->ziggurat = 25/60) + (ziggurat->shrine->giparu = 3/60) = 28/60 = 7/15 ~
+
+how to get from north_gate to giparu?
+assert last answer: `Directions from north_gate to giparu:
+  1. Start at north_gate then go to harbor then go to giparu (Total: 17r60 danna).
+  2. Start at north_gate then go to harbor then go to warehouse then go to ah_quarter then go to ehursag_palace then go to enunmah then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 7/15 danna).
+  3. Start at north_gate then go to harbor then go to warehouse then go to ah_quarter then go to scribal_school then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 11/20 danna).
+` error message: `north_gate to giparu directions mismatch`
+
+how far men travel from harbor to giparu?
+assert last answer: `men traveled 3600 kush.` error message: `harbor to giparu distance mismatch`
+~ (12/60) * 18000 = 3600 ~
+
+what are all paths men travel from harbor to giparu?
+assert last answer: `Paths from harbor to giparu: 1. direct (12r60 danna); 2. via warehouse and ah_quarter and ehursag_palace and enunmah and ziggurat and shrine_of_nanna (23r60 danna); 3. via warehouse and ah_quarter and scribal_school and ziggurat and shrine_of_nanna (7/15 danna).` error message: `all paths harbor-giparu mismatch`
+~ 28/60 reduced is 7/15 ~
+
+how much danna men travel from north_gate to giparu?
+assert last answer: `men traveled 17r60 danna.` error message: `gate to giparu shortcut sum mismatch`
+~ gate-harbor (5) + harbor-giparu (12) = 17/60 ~
+
+~ Final test for city-wide navigation to the cemetery ~
+how far men travel from north_gate to royal_cemetery?
+assert last answer: `men traveled 5700 kush.` error message: `north_gate to royal_cemetery distance mismatch`
+~ Shortest path: gate->harbor (5) + harbor->giparu (12) + giparu->royal_cemetery (2) = 19/60 danna. ~
+~ (19/60) * 18000 kush = 5700 kush. ~
+
+how much danna men travel from north_gate to royal_cemetery?
+assert last answer: `men traveled 19r60 danna.` error message: `north_gate to royal_cemetery danna mismatch`
+
+~ Directions and complex circuits ~
+how to get from west_harbor to enunmah?
+assert last answer: `Directions from west_harbor to enunmah:
+  1. Start at west_harbor then go to ziggurat then go to enunmah (Total: 7/30 danna).
+  2. Start at west_harbor then go to ziggurat then go to scribal_school then go to ah_quarter then go to ehursag_palace then go to enunmah (Total: 7/12 danna).
+  3. Start at west_harbor then go to ziggurat then go to shrine_of_nanna then go to giparu then go to harbor then go to warehouse then go to ah_quarter then go to ehursag_palace then go to enunmah (Total: 3/4 danna).
+` error message: `west harbor to enunmah directions mismatch`
+
+how far men travel from west_harbor to enunmah?
+assert last answer: `men traveled 4200 kush.` error message: `west harbor to enunmah distance mismatch`
+~ (14/60) * 18000 = 4200 ~
+
+how to get from ehursag_palace to giparu?
+assert last answer: `Directions from ehursag_palace to giparu:
+  1. Start at ehursag_palace then go to enunmah then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 2/15 danna).
+  2. Start at ehursag_palace then go to ah_quarter then go to scribal_school then go to ziggurat then go to shrine_of_nanna then go to giparu (Total: 23r60 danna).
+  3. Start at ehursag_palace then go to ah_quarter then go to warehouse then go to harbor then go to giparu (Total: 9/20 danna).
+  4. Start at ehursag_palace then go to enunmah then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse then go to harbor then go to giparu (Total: 7/10 danna).
+` error message: `palace to giparu directions mismatch`
+
+~ Additional tests for long-range navigation and node discovery ~
+how much danna men travel from west_harbor to north_gate?
+assert last answer: `men traveled 8/15 danna.` error message: `west harbor to north gate danna mismatch`
+~ Shortest: WH->Z (12) + Z->Shrine (2) + Shrine->Giparu (1) + Giparu->Harbor (12) + Harbor->NG (5) = 32/60 = 8/15 danna ~
+
+how far men travel from ehursag_palace to warehouse?
+assert last answer: `men traveled 3300 kush.` error message: `palace to warehouse distance mismatch`
+~ Shortest: Palace->AH (5) + AH->Warehouse (6) = 11/60. (11/60) * 18000 = 3300 kush ~
+
+what are all paths men travel from ziggurat to ah_quarter?
+assert last answer: `Paths from ziggurat to ah_quarter: 1. via enunmah and ehursag_palace (1/6 danna); 2. via scribal_school (1/4 danna); 3. via shrine_of_nanna and giparu and harbor and warehouse (5/12 danna).` error message: `ziggurat to residential quarter all paths mismatch`
+
+how to get from west_harbor to north_gate?
+assert last answer: `Directions from west_harbor to north_gate:
+  1. Start at west_harbor then go to ziggurat then go to shrine_of_nanna then go to giparu then go to harbor then go to north_gate (Total: 8/15 danna).
+  2. Start at west_harbor then go to ziggurat then go to enunmah then go to ehursag_palace then go to ah_quarter then go to warehouse then go to harbor then go to north_gate (Total: 37r60 danna).
+  3. Start at west_harbor then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse then go to harbor then go to north_gate (Total: 7/10 danna).
+` error message: `west harbor to north gate directions mismatch`
+
+~ High-level navigation across commercial and royal sectors ~
+how much danna men travel from ehursag_palace to north_gate?
+assert last answer: `men traveled 1/3 danna.` error message: `palace to gate danna mismatch`
+~ Shortest: Palace->AH (5) + AH->Warehouse (6) + Warehouse->Harbor (4) + Harbor->NG (5) = 20/60 = 1/3 danna ~
+
+how long men travel from west_harbor to royal_cemetery?
+assert last answer: `men traveled for 17/30 hours.` error message: `west harbor to cemetery time mismatch`
+~ Shortest: WH->Z (12) + Z->Shrine (2) + Shrine->Giparu (1) + Giparu->RC (2) = 17/60 danna. (17/60)*2 = 17/30 hours ~
+
+how far men travel from scribal_school to ehursag_palace?
+assert last answer: `men traveled 3600 kush.` error message: `scribal school to palace distance mismatch`
+~ Shortest: Scribal->AH (7) + AH->Palace (5) = 12/60 = 1/5 danna. (1/5)*18000 = 3600 kush ~
+
+how much danna men travel from west_harbor to warehouse?
+assert last answer: `men traveled 7/15 danna.` error message: `west harbor to warehouse danna mismatch`
+~ Shortest: WH->Z (12) + Z->Enunmah (2) + Enunmah->Palace (3) + Palace->AH (5) + AH->Warehouse (6) = 28/60 = 7/15 danna ~
+
+how to get from royal_cemetery to warehouse?
+assert last answer: `Directions from royal_cemetery to warehouse:
+  1. Start at royal_cemetery then go to giparu then go to harbor then go to warehouse (Total: 3/10 danna).
+  2. Start at royal_cemetery then go to giparu then go to shrine_of_nanna then go to ziggurat then go to enunmah then go to ehursag_palace then go to ah_quarter then go to warehouse (Total: 7/20 danna).
+  3. Start at royal_cemetery then go to giparu then go to shrine_of_nanna then go to ziggurat then go to scribal_school then go to ah_quarter then go to warehouse (Total: 13/30 danna).
+` error message: `royal cemetery to warehouse directions mismatch`
+~ 18/60=3/10, 21/60=7/20, 26/60=13/30. Sorting is verified. ~
+
+end Physicos State Ur_City_Plan.

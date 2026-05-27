@@ -1,0 +1,110 @@
+~ Professional Activities of a Sumerian Scribe (Ur III Period) ~
+~ 1. Land Surveying (Sumerian: Gana-gid): Measuring the area of fields using the kush (cubit) and nindan (rod). ~
+~ 2. Ration Distribution (Sumerian: Sa2-du11): Calculating precise amounts of barley, oil, and wool for temple workers. ~
+~ 3. Construction Management: Estimating the number of mud bricks (Sumerian: Sig4) required for ziggurats or city walls. ~
+~ 4. Financial Accounting: Recording silver loans and computing monthly interest rates (usually 20-33%). ~
+~ 5. Inventory Auditing: Checking deliveries of grain, livestock, and textiles at the North Harbor warehouses. ~
+~ 6. Legal Transcription: Drafting contracts for house sales, marriages, and recording the verdicts of the governor. ~
+~ 7. Agricultural Planning: Forecasting harvest yields based on field size and seed-to-grain ratios. ~
+~ 8. Epistolary Duties: Writing and reading official letters sent between city-states via royal messengers. ~
+
+~ Common terms for this chapter ~
+men is a noun.
+grain is a noun.
+barley is a noun.
+ration is a noun.
+worker is a noun.
+field is a noun.
+nindan is a noun.
+nindan plural is nindan.
+length is a noun.
+breadth is a noun.
+place is a noun.
+area is a noun.
+sar is a noun.
+sar plural is sar.
+iku is a noun.
+iku plural is iku.
+bur is a noun.
+bur plural is bur.
+eshe is a noun.
+eshe plural is eshe.
+kush is a noun.
+kush plural is kush.
+danna is a noun.
+danna plural is danna.
+sila is a noun.
+sila plural is sila.
+wheat is a noun.
+grains is a noun.
+grains plural is grains.
+gur is a noun.
+gur plural is gur.
+north_boundary is a noun.
+south_boundary is a noun.
+shekel is a noun.
+shekel plural is shekels.
+silver is a noun.
+volume is a noun.
+palm_grove is a noun.
+temple_worker is a noun.
+total_allocation is a noun.
+daily_ration is a noun.
+
+~ Metrology for Working ~
+
+a nindan is equal to 12 kush.
+a danna is equal to 18000 kush.
+an iku is equal to 100 sar.
+an eshe is equal to 600 sar.
+a bur is equal to 1800 sar.
+a shekel is equal to 180 grains of wheat.
+a gur is equal to 300 sila.
+
+a place has a length.
+a place has a breadth.
+
+~ Initial Work State ~
+start Physicos State Ur_Administration.
+
+palm_grove is an instance of place.
+large_field is an instance of place.
+small_patch is an instance of place.
+temple_worker is an instance of place.
+~ Task 1: Land Surveying (Gana-gid) ~
+~ The scribe measures the dimensions of the palm grove near the Euphrates canal. ~
+palm_grove has length 20 nindan.
+palm_grove has breadth 10 nindan.
+large_field has length 180 nindan.
+large_field has breadth 10 nindan.
+small_patch has length 10 nindan.
+small_patch has breadth 5 nindan.
+temple_worker has total_allocation 1 gur.
+temple_worker has daily_ration 5 sila.
+
+~ Area calculation: 20 nindan * 10 nindan = 200 sar = 2 iku = 1/3 eshe ~
+how many sar is area of palm_grove?
+assert last answer: `palm_grove has area of 200 sar.` error message: `palm_grove area in sar mismatch`
+
+how many iku is area of palm_grove?
+assert last answer: `palm_grove has area of 2 iku.` error message: `palm_grove area in iku mismatch`
+
+how many eshe is area of palm_grove?
+assert last answer: `palm_grove has area of 1/3 eshe.` error message: `palm_grove area in eshe mismatch`
+
+how many sar is area of large_field?
+assert last answer: `large_field has area of 1800 sar.` error message: `large_field area in sar mismatch`
+
+how many bur is area of large_field?
+assert last answer: `large_field has area of 1 bur.` error message: `large_field area in bur mismatch`
+
+how many iku is area of small_patch?
+assert last answer: `small_patch has area of 1/2 iku.` error message: `small_patch area in iku mismatch`
+
+what is a ratio between breadth of palm_grove and length of palm_grove?
+assert last answer: `The ratio between breadth of palm_grove and length of palm_grove is 1/2.` error message: `palm_grove breadth/length ratio mismatch`
+
+what is a ratio between total_allocation of temple_worker and daily_ration of temple_worker?
+assert last answer: `The ratio between total_allocation of temple_worker and daily_ration of temple_worker is 60.` error message: `temple_worker ration ratio mismatch`
+
+end Physicos State Ur_Administration.
